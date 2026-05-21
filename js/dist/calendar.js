@@ -12,7 +12,7 @@
   /* eslint-disable complexity, indent, multiline-ternary, @stylistic/multiline-ternary */
   /**
    * --------------------------------------------------------------------------
-   * CoreUI PRO calendar.js
+   * calendar.js
    * License (https://coreui.io/pro/license/)
    * --------------------------------------------------------------------------
    */

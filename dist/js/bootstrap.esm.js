@@ -1018,7 +1018,7 @@ function sanitizeHtml(unsafeHtml, allowList, sanitizeFunction) {
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI PRO autocomplete.js
+ * autocomplete.js
  * License (https://coreui.io/pro/license/)
  * --------------------------------------------------------------------------
  */
@@ -3088,7 +3088,7 @@ const createDateFromYear = groups => {
 /* eslint-disable complexity, indent, multiline-ternary, @stylistic/multiline-ternary */
 /**
  * --------------------------------------------------------------------------
- * CoreUI PRO calendar.js
+ * calendar.js
  * License (https://coreui.io/pro/license/)
  * --------------------------------------------------------------------------
  */
@@ -5831,7 +5831,7 @@ const shouldUseTwoDigitHour = locale => {
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI PRO time-picker.js
+ * time-picker.js
  * License (https://coreui.io/pro/license/)
  * --------------------------------------------------------------------------
  */
@@ -6675,7 +6675,7 @@ defineJQueryPlugin(TimePicker);
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI PRO date-range-picker.js
+ * date-range-picker.js
  * License (https://coreui.io/pro/license/)
  * --------------------------------------------------------------------------
  */
@@ -7638,7 +7638,7 @@ defineJQueryPlugin(DateRangePicker);
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI PRO date-picker.js
+ * date-picker.js
  * License (https://coreui.io/pro/license/)
  * --------------------------------------------------------------------------
  */
@@ -8152,7 +8152,7 @@ defineJQueryPlugin(Dropdown);
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI PRO loading-button.js
+ * loading-button.js
  * License (https://coreui.io/pro/license/)
  * --------------------------------------------------------------------------
  */
@@ -8845,7 +8845,7 @@ defineJQueryPlugin(Modal);
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI PRO multi-select.js
+ * multi-select.js
  * License (https://coreui.io/pro/license/)
  * --------------------------------------------------------------------------
  */
@@ -10315,7 +10315,7 @@ defineJQueryPlugin(Offcanvas);
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI PRO password-input.js
+ * password-input.js
  * License (https://coreui.io/pro/license/)
  * --------------------------------------------------------------------------
  */
@@ -10725,7 +10725,7 @@ defineJQueryPlugin(OTPInput);
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI PRO password-input.js
+ * password-input.js
  * License (https://coreui.io/pro/license/)
  * --------------------------------------------------------------------------
  */
@@ -11523,7 +11523,7 @@ defineJQueryPlugin(Popover);
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI PRO range-slider.js
+ * range-slider.js
  * License (https://coreui.io/pro/license/)
  * --------------------------------------------------------------------------
  */
@@ -12089,7 +12089,7 @@ defineJQueryPlugin(RangeSlider);
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI PRO rating.js
+ * rating.js
  * License (https://coreui.io/pro/license/)
  * --------------------------------------------------------------------------
  */
@@ -13396,7 +13396,7 @@ defineJQueryPlugin(Sidebar);
 
 /**
  * --------------------------------------------------------------------------
- * CoreUI PRO stepper.js
+ * stepper.js
  * License (https://coreui.io/pro/license/)
  * --------------------------------------------------------------------------
  */
