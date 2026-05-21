@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
  * UI modal.js
- * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+ * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
  *
  * This component is a modified version of the Bootstrap's modal.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -24,7 +24,7 @@ import ScrollBarHelper from './util/scrollbar.js'
  */
 
 const NAME = 'modal'
-const DATA_KEY = 'coreui.modal'
+const DATA_KEY = 'ui.modal'
 const EVENT_KEY = `.${DATA_KEY}`
 const DATA_API_KEY = '.data-api'
 const ESCAPE_KEY = 'Escape'
@@ -48,7 +48,7 @@ const CLASS_NAME_STATIC = 'modal-static'
 const OPEN_SELECTOR = '.modal.show'
 const SELECTOR_DIALOG = '.modal-dialog'
 const SELECTOR_MODAL_BODY = '.modal-body'
-const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle="modal"]'
+const SELECTOR_DATA_TOGGLE = '[data-ui-toggle="modal"]'
 
 const Default = {
   backdrop: true,

@@ -1,7 +1,7 @@
 /*!
   * UI stepper.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('./base-component.js'), require('./dom/event-handler.js'), require('./dom/manipulator.js'), require('./dom/selector-engine.js'), require('./util/index.js')) :
@@ -22,7 +22,7 @@
    */
 
   const NAME = 'stepper';
-  const DATA_KEY = 'coreui.stepper';
+  const DATA_KEY = 'ui.stepper';
   const EVENT_KEY = `.${DATA_KEY}`;
   const EVENT_FINISH = `finish${EVENT_KEY}`;
   const EVENT_RESET = `reset${EVENT_KEY}`;
@@ -37,9 +37,9 @@
   const CLASS_NAME_STEPPER_STEP_CONNECTOR = 'stepper-step-connector';
   const CLASS_NAME_STEPPER_STEP_INDICATOR_ICON = 'stepper-step-indicator-icon';
   const CLASS_NAME_STEPPER_STEP_INDICATOR_TEXT = 'stepper-step-indicator-text';
-  const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle="stepper"]';
+  const SELECTOR_DATA_TOGGLE = '[data-ui-toggle="stepper"]';
   const SELECTOR_STEPPER = '.stepper';
-  const SELECTOR_STEPPER_ACTION = '[data-coreui-stepper-action]';
+  const SELECTOR_STEPPER_ACTION = '[data-ui-stepper-action]';
   const SELECTOR_STEPPER_STEP = '.stepper-step';
   const SELECTOR_STEPPER_STEP_BUTTON = '.stepper-step-button';
   const SELECTOR_STEPPER_STEP_CONTENT = '.stepper-step-content';

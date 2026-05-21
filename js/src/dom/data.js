@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
  * UI dom/data.js
- * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+ * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
  *
  * This is a modified version of the Bootstrap's dom/data.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)

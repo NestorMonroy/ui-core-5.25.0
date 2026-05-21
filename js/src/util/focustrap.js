@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
  * UI util/focustrap.js
- * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+ * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
  *
  * This is a modified version of the Bootstrap's util/focustrap.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -17,7 +17,7 @@ import Config from './config.js'
  */
 
 const NAME = 'focustrap'
-const DATA_KEY = 'coreui.focustrap'
+const DATA_KEY = 'ui.focustrap'
 const EVENT_KEY = `.${DATA_KEY}`
 const EVENT_FOCUSIN = `focusin${EVENT_KEY}`
 const EVENT_KEYDOWN_TAB = `keydown.tab${EVENT_KEY}`

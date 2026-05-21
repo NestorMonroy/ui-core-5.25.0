@@ -27,7 +27,7 @@ import {
  */
 
 const NAME = 'multi-select'
-const DATA_KEY = 'coreui.multi-select'
+const DATA_KEY = 'ui.multi-select'
 const EVENT_KEY = `.${DATA_KEY}`
 const DATA_API_KEY = '.data-api'
 
@@ -636,7 +636,7 @@ class MultiSelect extends BaseComponent {
 
   _createPopper() {
     if (typeof Popper === 'undefined') {
-      throw new TypeError('CoreUI\'s multi select require Popper (https://popper.js.org)')
+      throw new TypeError('ui\'s multi select require Popper (https://popper.js.org)')
     }
 
     const popperConfig = {

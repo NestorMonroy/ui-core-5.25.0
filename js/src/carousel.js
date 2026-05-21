@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
  * UI carousel.js
- * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+ * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
  *
  * This component is a modified version of the Bootstrap's carousel.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -27,7 +27,7 @@ import Swipe from './util/swipe.js'
  */
 
 const NAME = 'carousel'
-const DATA_KEY = 'coreui.carousel'
+const DATA_KEY = 'ui.carousel'
 const EVENT_KEY = `.${DATA_KEY}`
 const DATA_API_KEY = '.data-api'
 
@@ -62,8 +62,8 @@ const SELECTOR_ITEM = '.carousel-item'
 const SELECTOR_ACTIVE_ITEM = SELECTOR_ACTIVE + SELECTOR_ITEM
 const SELECTOR_ITEM_IMG = '.carousel-item img'
 const SELECTOR_INDICATORS = '.carousel-indicators'
-const SELECTOR_DATA_SLIDE = '[data-coreui-slide], [data-coreui-slide-to]'
-const SELECTOR_DATA_RIDE = '[data-coreui-ride="carousel"]'
+const SELECTOR_DATA_SLIDE = '[data-ui-slide], [data-ui-slide-to]'
+const SELECTOR_DATA_RIDE = '[data-ui-ride="carousel"]'
 
 const KEY_TO_DIRECTION = {
   [ARROW_LEFT_KEY]: DIRECTION_RIGHT,
@@ -280,7 +280,7 @@ class Carousel extends BaseComponent {
     activeIndicator.classList.remove(CLASS_NAME_ACTIVE)
     activeIndicator.removeAttribute('aria-current')
 
-    const newActiveIndicator = SelectorEngine.findOne(`[data-coreui-slide-to="${index}"]`, this._indicatorsElement)
+    const newActiveIndicator = SelectorEngine.findOne(`[data-ui-slide-to="${index}"]`, this._indicatorsElement)
 
     if (newActiveIndicator) {
       newActiveIndicator.classList.add(CLASS_NAME_ACTIVE)
@@ -295,7 +295,7 @@ class Carousel extends BaseComponent {
       return
     }
 
-    const elementInterval = Number.parseInt(element.getAttribute('data-coreui-interval'), 10)
+    const elementInterval = Number.parseInt(element.getAttribute('data-ui-interval'), 10)
 
     this._config.interval = elementInterval || this._config.defaultInterval
   }
@@ -442,7 +442,7 @@ EventHandler.on(document, EVENT_CLICK_DATA_API, SELECTOR_DATA_SLIDE, function (e
   event.preventDefault()
 
   const carousel = Carousel.getOrCreateInstance(target)
-  const slideIndex = this.getAttribute('data-coreui-slide-to')
+  const slideIndex = this.getAttribute('data-ui-slide-to')
 
   if (slideIndex) {
     carousel.to(slideIndex)

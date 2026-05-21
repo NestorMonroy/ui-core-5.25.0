@@ -1,7 +1,7 @@
 /*!
   * UI collapse.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('./base-component.js'), require('./dom/event-handler.js'), require('./dom/selector-engine.js'), require('./util/index.js')) :
@@ -12,7 +12,7 @@
   /**
    * --------------------------------------------------------------------------
    * UI collapse.js
-   * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+   * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
    *
    * This component is a modified version of the Bootstrap's collapse.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -25,7 +25,7 @@
    */
 
   const NAME = 'collapse';
-  const DATA_KEY = 'coreui.collapse';
+  const DATA_KEY = 'ui.collapse';
   const EVENT_KEY = `.${DATA_KEY}`;
   const DATA_API_KEY = '.data-api';
   const EVENT_SHOW = `show${EVENT_KEY}`;
@@ -42,7 +42,7 @@
   const WIDTH = 'width';
   const HEIGHT = 'height';
   const SELECTOR_ACTIVES = '.collapse.show, .collapse.collapsing';
-  const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle="collapse"]';
+  const SELECTOR_DATA_TOGGLE = '[data-ui-toggle="collapse"]';
   const Default = {
     parent: null,
     toggle: true

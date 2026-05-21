@@ -18,7 +18,7 @@ import {
  */
 
 const NAME = 'stepper'
-const DATA_KEY = 'coreui.stepper'
+const DATA_KEY = 'ui.stepper'
 const EVENT_KEY = `.${DATA_KEY}`
 
 const EVENT_FINISH = `finish${EVENT_KEY}`
@@ -36,9 +36,9 @@ const CLASS_NAME_STEPPER_STEP_CONNECTOR = 'stepper-step-connector'
 const CLASS_NAME_STEPPER_STEP_INDICATOR_ICON = 'stepper-step-indicator-icon'
 const CLASS_NAME_STEPPER_STEP_INDICATOR_TEXT = 'stepper-step-indicator-text'
 
-const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle="stepper"]'
+const SELECTOR_DATA_TOGGLE = '[data-ui-toggle="stepper"]'
 const SELECTOR_STEPPER = '.stepper'
-const SELECTOR_STEPPER_ACTION = '[data-coreui-stepper-action]'
+const SELECTOR_STEPPER_ACTION = '[data-ui-stepper-action]'
 const SELECTOR_STEPPER_STEP = '.stepper-step'
 const SELECTOR_STEPPER_STEP_BUTTON = '.stepper-step-button'
 const SELECTOR_STEPPER_STEP_CONTENT = '.stepper-step-content'

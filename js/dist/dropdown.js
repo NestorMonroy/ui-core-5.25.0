@@ -1,7 +1,7 @@
 /*!
   * UI dropdown.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('@popperjs/core'), require('./base-component.js'), require('./dom/event-handler.js'), require('./dom/manipulator.js'), require('./dom/selector-engine.js'), require('./util/index.js')) :
@@ -31,7 +31,7 @@
   /**
    * --------------------------------------------------------------------------
    * UI dropdown.js
-   * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+   * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
    *
    * This component is a modified version of the Bootstrap's dropdown.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -44,7 +44,7 @@
    */
 
   const NAME = 'dropdown';
-  const DATA_KEY = 'coreui.dropdown';
+  const DATA_KEY = 'ui.dropdown';
   const EVENT_KEY = `.${DATA_KEY}`;
   const DATA_API_KEY = '.data-api';
   const ESCAPE_KEY = 'Escape';
@@ -66,7 +66,7 @@
   const CLASS_NAME_DROPSTART = 'dropstart';
   const CLASS_NAME_DROPUP_CENTER = 'dropup-center';
   const CLASS_NAME_DROPDOWN_CENTER = 'dropdown-center';
-  const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle="dropdown"]:not(.disabled):not(:disabled)';
+  const SELECTOR_DATA_TOGGLE = '[data-ui-toggle="dropdown"]:not(.disabled):not(:disabled)';
   const SELECTOR_DATA_TOGGLE_SHOWN = `${SELECTOR_DATA_TOGGLE}.${CLASS_NAME_SHOW}`;
   const SELECTOR_MENU = '.dropdown-menu';
   const SELECTOR_NAVBAR = '.navbar';
@@ -209,7 +209,7 @@
     }
     _createPopper() {
       if (typeof Popper__namespace === 'undefined') {
-        throw new TypeError('CoreUI\'s dropdowns require Popper (https://popper.js.org/docs/v2/)');
+        throw new TypeError('ui\'s dropdowns require Popper (https://popper.js.org/docs/v2/)');
       }
       let referenceElement = this._element;
       if (this._config.reference === 'parent') {

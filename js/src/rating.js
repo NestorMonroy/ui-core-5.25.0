@@ -18,7 +18,7 @@ import Tooltip from './tooltip.js'
  */
 
 const NAME = 'rating'
-const DATA_KEY = 'coreui.rating'
+const DATA_KEY = 'ui.rating'
 const EVENT_KEY = `.${DATA_KEY}`
 const DATA_API_KEY = '.data-api'
 const DISALLOWED_ATTRIBUTES = new Set(['sanitize', 'allowList', 'sanitizeFn'])
@@ -43,7 +43,7 @@ const CLASS_NAME_RATING_ITEM_INPUT = 'rating-item-input'
 const CLASS_NAME_RATING_ITEM_LABEL = 'rating-item-label'
 const CLASS_NAME_READONLY = 'readonly'
 
-const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle="rating"]'
+const SELECTOR_DATA_TOGGLE = '[data-ui-toggle="rating"]'
 const SELECTOR_RATING_ITEM_INPUT = '.rating-item-input'
 const SELECTOR_RATING_ITEM_LABEL = '.rating-item-label'
 

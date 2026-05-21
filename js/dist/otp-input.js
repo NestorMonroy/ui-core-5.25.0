@@ -1,7 +1,7 @@
 /*!
   * UI otp-input.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('./base-component.js'), require('./dom/event-handler.js'), require('./dom/selector-engine.js'), require('./util/index.js')) :
@@ -22,7 +22,7 @@
    */
 
   const NAME = 'otp-input';
-  const DATA_KEY = 'coreui.otp-input';
+  const DATA_KEY = 'ui.otp-input';
   const EVENT_KEY = `.${DATA_KEY}`;
   const DATA_API_KEY = '.data-api';
   const ARROW_RIGHT_KEY = 'ArrowRight';
@@ -36,7 +36,7 @@
   const EVENT_PASTE = `paste`;
   const EVENT_LOAD_DATA_API = `load${EVENT_KEY}${DATA_API_KEY}`;
   const SELECTOR_FORM_OTP_CONTROL = '.form-otp-control';
-  const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle="otp"]';
+  const SELECTOR_DATA_TOGGLE = '[data-ui-toggle="otp"]';
   const Default = {
     ariaLabel: (index, total) => `Digit ${index + 1} of ${total}`,
     autoSubmit: false,

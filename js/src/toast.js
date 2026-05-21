@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
  * UI toast.js
- * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+ * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
  *
  * This component is a modified version of the Bootstrap's toast.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -18,7 +18,7 @@ import { defineJQueryPlugin, reflow } from './util/index.js'
  */
 
 const NAME = 'toast'
-const DATA_KEY = 'coreui.toast'
+const DATA_KEY = 'ui.toast'
 const EVENT_KEY = `.${DATA_KEY}`
 
 const EVENT_MOUSEOVER = `mouseover${EVENT_KEY}`

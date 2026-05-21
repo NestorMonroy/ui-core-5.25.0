@@ -1,7 +1,7 @@
 /*!
   * UI autocomplete.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('@popperjs/core'), require('./base-component.js'), require('./dom/data.js'), require('./dom/event-handler.js'), require('./dom/selector-engine.js'), require('./util/sanitizer.js'), require('./util/index.js')) :
@@ -43,7 +43,7 @@
    */
 
   const NAME = 'autocomplete';
-  const DATA_KEY = 'coreui.autocomplete';
+  const DATA_KEY = 'ui.autocomplete';
   const EVENT_KEY = `.${DATA_KEY}`;
   const DATA_API_KEY = '.data-api';
   const ARROW_UP_KEY = 'ArrowUp';
@@ -85,7 +85,7 @@
   const CLASS_NAME_OPTIONS_EMPTY = 'autocomplete-options-empty';
   const CLASS_NAME_SELECTED = 'selected';
   const CLASS_NAME_SHOW = 'show';
-  const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle="autocomplete"]:not(.disabled)';
+  const SELECTOR_DATA_TOGGLE = '[data-ui-toggle="autocomplete"]:not(.disabled)';
   const SELECTOR_DATA_TOGGLE_SHOWN = `.autocomplete:not(.disabled).${CLASS_NAME_SHOW}`;
   const SELECTOR_INDICATOR = '.autocomplete-indicator';
   const SELECTOR_OPTGROUP = '.autocomplete-optgroup';
@@ -591,7 +591,7 @@
     }
     _createPopper() {
       if (typeof Popper__namespace === 'undefined') {
-        throw new TypeError('CoreUI\'s Auto Complete component require Popper (https://popper.js.org)');
+        throw new TypeError('ui\'s Auto Complete component require Popper (https://popper.js.org)');
       }
       const popperConfig = {
         modifiers: [{

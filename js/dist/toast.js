@@ -1,7 +1,7 @@
 /*!
   * UI toast.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('./base-component.js'), require('./dom/event-handler.js'), require('./util/component-functions.js'), require('./util/index.js')) :
@@ -12,7 +12,7 @@
   /**
    * --------------------------------------------------------------------------
    * UI toast.js
-   * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+   * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
    *
    * This component is a modified version of the Bootstrap's toast.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -25,7 +25,7 @@
    */
 
   const NAME = 'toast';
-  const DATA_KEY = 'coreui.toast';
+  const DATA_KEY = 'ui.toast';
   const EVENT_KEY = `.${DATA_KEY}`;
   const EVENT_MOUSEOVER = `mouseover${EVENT_KEY}`;
   const EVENT_MOUSEOUT = `mouseout${EVENT_KEY}`;

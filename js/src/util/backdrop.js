@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
  * UI util/backdrop.js
- * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+ * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
  *
  * This is a modified version of the Bootstrap's util/backdrop.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -21,7 +21,7 @@ import {
 const NAME = 'backdrop'
 const CLASS_NAME_FADE = 'fade'
 const CLASS_NAME_SHOW = 'show'
-const EVENT_MOUSEDOWN = `mousedown.coreui.${NAME}`
+const EVENT_MOUSEDOWN = `mousedown.ui.${NAME}`
 
 const Default = {
   className: 'modal-backdrop',

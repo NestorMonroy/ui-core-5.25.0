@@ -1,7 +1,7 @@
 /*!
   * UI carousel.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('./base-component.js'), require('./dom/event-handler.js'), require('./dom/manipulator.js'), require('./dom/selector-engine.js'), require('./util/index.js'), require('./util/swipe.js')) :
@@ -12,7 +12,7 @@
   /**
    * --------------------------------------------------------------------------
    * UI carousel.js
-   * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+   * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
    *
    * This component is a modified version of the Bootstrap's carousel.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -25,7 +25,7 @@
    */
 
   const NAME = 'carousel';
-  const DATA_KEY = 'coreui.carousel';
+  const DATA_KEY = 'ui.carousel';
   const EVENT_KEY = `.${DATA_KEY}`;
   const DATA_API_KEY = '.data-api';
   const ARROW_LEFT_KEY = 'ArrowLeft';
@@ -56,8 +56,8 @@
   const SELECTOR_ACTIVE_ITEM = SELECTOR_ACTIVE + SELECTOR_ITEM;
   const SELECTOR_ITEM_IMG = '.carousel-item img';
   const SELECTOR_INDICATORS = '.carousel-indicators';
-  const SELECTOR_DATA_SLIDE = '[data-coreui-slide], [data-coreui-slide-to]';
-  const SELECTOR_DATA_RIDE = '[data-coreui-ride="carousel"]';
+  const SELECTOR_DATA_SLIDE = '[data-ui-slide], [data-ui-slide-to]';
+  const SELECTOR_DATA_RIDE = '[data-ui-ride="carousel"]';
   const KEY_TO_DIRECTION = {
     [ARROW_LEFT_KEY]: DIRECTION_RIGHT,
     [ARROW_RIGHT_KEY]: DIRECTION_LEFT
@@ -236,7 +236,7 @@
       const activeIndicator = SelectorEngine.findOne(SELECTOR_ACTIVE, this._indicatorsElement);
       activeIndicator.classList.remove(CLASS_NAME_ACTIVE);
       activeIndicator.removeAttribute('aria-current');
-      const newActiveIndicator = SelectorEngine.findOne(`[data-coreui-slide-to="${index}"]`, this._indicatorsElement);
+      const newActiveIndicator = SelectorEngine.findOne(`[data-ui-slide-to="${index}"]`, this._indicatorsElement);
       if (newActiveIndicator) {
         newActiveIndicator.classList.add(CLASS_NAME_ACTIVE);
         newActiveIndicator.setAttribute('aria-current', 'true');
@@ -247,7 +247,7 @@
       if (!element) {
         return;
       }
-      const elementInterval = Number.parseInt(element.getAttribute('data-coreui-interval'), 10);
+      const elementInterval = Number.parseInt(element.getAttribute('data-ui-interval'), 10);
       this._config.interval = elementInterval || this._config.defaultInterval;
     }
     _slide(order, element = null) {
@@ -358,7 +358,7 @@
     }
     event.preventDefault();
     const carousel = Carousel.getOrCreateInstance(target);
-    const slideIndex = this.getAttribute('data-coreui-slide-to');
+    const slideIndex = this.getAttribute('data-ui-slide-to');
     if (slideIndex) {
       carousel.to(slideIndex);
       carousel._maybeEnableCycle();

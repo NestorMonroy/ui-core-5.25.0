@@ -1,7 +1,7 @@
 /*!
   * UI chip.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('./base-component.js'), require('./dom/event-handler.js'), require('./dom/selector-engine.js'), require('./util/index.js')) :
@@ -12,7 +12,7 @@
   /**
    * --------------------------------------------------------------------------
    * UI chip.js
-   * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+   * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
 
@@ -22,7 +22,7 @@
    */
 
   const NAME = 'chip';
-  const DATA_KEY = 'coreui.chip';
+  const DATA_KEY = 'ui.chip';
   const EVENT_KEY = `.${DATA_KEY}`;
   const DATA_API_KEY = '.data-api';
   const EVENT_REMOVE = `remove${EVENT_KEY}`;
@@ -32,7 +32,7 @@
   const EVENT_DESELECT = `deselect${EVENT_KEY}`;
   const EVENT_DESELECTED = `deselected${EVENT_KEY}`;
   const SELECTOR_CHIP_REMOVE = '.chip-remove';
-  const SELECTOR_DATA_CHIP = '[data-coreui-chip]';
+  const SELECTOR_DATA_CHIP = '[data-ui-chip]';
   const SELECTOR_FOCUSABLE_ITEMS = '.chip:not(.disabled)';
   const CLASS_NAME_CHIP_CLICKABLE = 'chip-clickable';
   const CLASS_NAME_CHIP_REMOVE = 'chip-remove';

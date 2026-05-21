@@ -1,7 +1,7 @@
 /*!
   * UI multi-select.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('@popperjs/core'), require('./base-component.js'), require('./dom/data.js'), require('./dom/event-handler.js'), require('./dom/selector-engine.js'), require('./util/sanitizer.js'), require('./util/index.js')) :
@@ -43,7 +43,7 @@
    */
 
   const NAME = 'multi-select';
-  const DATA_KEY = 'coreui.multi-select';
+  const DATA_KEY = 'ui.multi-select';
   const EVENT_KEY = `.${DATA_KEY}`;
   const DATA_API_KEY = '.data-api';
   const ARROW_UP_KEY = 'ArrowUp';
@@ -567,7 +567,7 @@
     }
     _createPopper() {
       if (typeof Popper__namespace === 'undefined') {
-        throw new TypeError('CoreUI\'s multi select require Popper (https://popper.js.org)');
+        throw new TypeError('ui\'s multi select require Popper (https://popper.js.org)');
       }
       const popperConfig = {
         modifiers: [{

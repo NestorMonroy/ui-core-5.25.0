@@ -69,7 +69,7 @@ $warning-border-subtle-dark:        shade-color($warning, 40%) !default;
 $danger-border-subtle-dark:         shade-color($danger, 40%) !default;
 // scss-docs-end theme-border-subtle-dark-variables
 
-@forward "../../coreui" with (
+@forward "../../ui" with (
   $prefix:                        bs- !default,
   $data-infix:                    -bs- !default,
   $white:                         $white !default,

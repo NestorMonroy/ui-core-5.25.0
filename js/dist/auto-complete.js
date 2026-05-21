@@ -1,7 +1,7 @@
 /*!
   * UI auto-complete.js v5.15.0 
-  * Copyright 2025 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2025 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('@popperjs/core'), require('./base-component.js'), require('./dom/data.js'), require('./dom/event-handler.js'), require('./dom/selector-engine.js'), require('./util/index.js')) :
@@ -43,7 +43,7 @@
    */
 
   const NAME = 'auto-complete';
-  const DATA_KEY = 'coreui.auto-complete';
+  const DATA_KEY = 'ui.auto-complete';
   const EVENT_KEY = `.${DATA_KEY}`;
   const DATA_API_KEY = '.data-api';
   const ARROW_UP_KEY = 'ArrowUp';
@@ -525,7 +525,7 @@
     }
     _createPopper() {
       if (typeof Popper__namespace === 'undefined') {
-        throw new TypeError('CoreUI\'s Auto Complete component require Popper (https://popper.js.org)');
+        throw new TypeError('ui\'s Auto Complete component require Popper (https://popper.js.org)');
       }
       const popperConfig = {
         modifiers: [{

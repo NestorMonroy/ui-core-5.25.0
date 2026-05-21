@@ -1,7 +1,7 @@
 /*!
   * UI selector-engine.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('../util/index.js')) :
@@ -12,7 +12,7 @@
   /**
    * --------------------------------------------------------------------------
    * UI dom/selector-engine.js
-   * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+   * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
    *
    * This is a modified version of the Bootstrap's dom/selector-engine.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -20,7 +20,7 @@
    */
 
   const getSelector = element => {
-    let selector = element.getAttribute('data-coreui-target');
+    let selector = element.getAttribute('data-ui-target');
     if (!selector || selector === '#') {
       let hrefAttribute = element.getAttribute('href');
 

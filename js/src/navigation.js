@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
  * UI navigation.js
- * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+ * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -18,7 +18,7 @@ import { defineJQueryPlugin } from './util/index.js'
  */
 
 const NAME = 'navigation'
-const DATA_KEY = 'coreui.navigation'
+const DATA_KEY = 'ui.navigation'
 const EVENT_KEY = `.${DATA_KEY}`
 const DATA_API_KEY = '.data-api'
 
@@ -45,7 +45,7 @@ const SELECTOR_NAV_GROUP = '.nav-group'
 const SELECTOR_NAV_GROUP_ITEMS = '.nav-group-items'
 const SELECTOR_NAV_GROUP_TOGGLE = '.nav-group-toggle'
 const SELECTOR_NAV_LINK = '.nav-link'
-const SELECTOR_DATA_NAVIGATION = '[data-coreui-navigation], [data-coreui="navigation"]'
+const SELECTOR_DATA_NAVIGATION = '[data-ui-navigation], [data-ui="navigation"]'
 
 /**
  * ------------------------------------------------------------------------

@@ -27,7 +27,7 @@ import {
  */
 
 const NAME = 'autocomplete'
-const DATA_KEY = 'coreui.autocomplete'
+const DATA_KEY = 'ui.autocomplete'
 const EVENT_KEY = `.${DATA_KEY}`
 const DATA_API_KEY = '.data-api'
 
@@ -72,7 +72,7 @@ const CLASS_NAME_OPTIONS_EMPTY = 'autocomplete-options-empty'
 const CLASS_NAME_SELECTED = 'selected'
 const CLASS_NAME_SHOW = 'show'
 
-const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle="autocomplete"]:not(.disabled)'
+const SELECTOR_DATA_TOGGLE = '[data-ui-toggle="autocomplete"]:not(.disabled)'
 const SELECTOR_DATA_TOGGLE_SHOWN = `.autocomplete:not(.disabled).${CLASS_NAME_SHOW}`
 const SELECTOR_INDICATOR = '.autocomplete-indicator'
 const SELECTOR_OPTGROUP = '.autocomplete-optgroup'
@@ -672,7 +672,7 @@ class Autocomplete extends BaseComponent {
 
   _createPopper() {
     if (typeof Popper === 'undefined') {
-      throw new TypeError('CoreUI\'s Auto Complete component require Popper (https://popper.js.org)')
+      throw new TypeError('ui\'s Auto Complete component require Popper (https://popper.js.org)')
     }
 
     const popperConfig = {

@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
  * UI util/index.js
- * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+ * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
  *
  * This is a modified version of the Bootstrap's util/index.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -180,7 +180,7 @@ const reflow = element => {
 }
 
 const getjQuery = () => {
-  if (window.jQuery && !document.body.hasAttribute('data-coreui-no-jquery')) {
+  if (window.jQuery && !document.body.hasAttribute('data-ui-no-jquery')) {
     return window.jQuery
   }
 

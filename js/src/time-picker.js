@@ -28,7 +28,7 @@ import {
  */
 
 const NAME = 'time-picker'
-const DATA_KEY = 'coreui.time-picker'
+const DATA_KEY = 'ui.time-picker'
 const EVENT_KEY = `.${DATA_KEY}`
 const DATA_API_KEY = '.data-api'
 
@@ -79,7 +79,7 @@ const CLASS_NAME_TIME_PICKER = 'time-picker'
 const CLASS_NAME_WAS_VALIDATED = 'was-validated'
 
 const SELECTOR_DATA_TOGGLE =
-  '[data-coreui-toggle="time-picker"]:not(.disabled):not(:disabled)'
+  '[data-ui-toggle="time-picker"]:not(.disabled):not(:disabled)'
 const SELECTOR_DATA_TOGGLE_SHOWN = `${SELECTOR_DATA_TOGGLE}.${CLASS_NAME_SHOW}`
 const SELECTOR_ROLL_CELL = '.time-picker-roll-cell'
 const SELECTOR_ROLL_CELL_FOCUSABLE = '.time-picker-roll-cell[tabindex="0"]'
@@ -423,7 +423,7 @@ class TimePicker extends BaseComponent {
       }
     })
 
-    EventHandler.on(this._element, 'timeChange.coreui.time-picker', () => {
+    EventHandler.on(this._element, 'timeChange.ui.time-picker', () => {
       if (this._config.variant === 'roll') {
         this._setUpRolls()
       }
@@ -433,7 +433,7 @@ class TimePicker extends BaseComponent {
       }
     })
 
-    EventHandler.on(this._element, 'onCancelClick.coreui.picker', () => {
+    EventHandler.on(this._element, 'onCancelClick.ui.picker', () => {
       this.cancel()
     })
 
@@ -816,7 +816,7 @@ class TimePicker extends BaseComponent {
         continue
       }
 
-      const elements = SelectorEngine.find(`[data-coreui-${part}]`, this._element)
+      const elements = SelectorEngine.find(`[data-ui-${part}]`, this._element)
       const selectedElement = elements.find(element =>
         partValue === Manipulator.getDataAttribute(element, part)
       )
@@ -883,7 +883,7 @@ class TimePicker extends BaseComponent {
   _createPopper() {
     if (typeof Popper === 'undefined') {
       throw new TypeError(
-        'CoreUI\'s time picker require Popper (https://popper.js.org)'
+        'ui\'s time picker require Popper (https://popper.js.org)'
       )
     }
 

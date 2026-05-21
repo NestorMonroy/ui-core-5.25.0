@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
  * UI util/component-functions.js
- * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+ * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
  *
  * This is a modified version of the Bootstrap's util/component-functions.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -16,7 +16,7 @@ const enableDismissTrigger = (component, method = 'hide') => {
   const clickEvent = `click.dismiss${component.EVENT_KEY}`
   const name = component.NAME
 
-  EventHandler.on(document, clickEvent, `[data-coreui-dismiss="${name}"]`, function (event) {
+  EventHandler.on(document, clickEvent, `[data-ui-dismiss="${name}"]`, function (event) {
     if (['A', 'AREA'].includes(this.tagName)) {
       event.preventDefault()
     }

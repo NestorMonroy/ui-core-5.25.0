@@ -15,7 +15,7 @@ import { defineJQueryPlugin, getNextActiveElement, isRTL } from './util/index.js
  */
 
 const NAME = 'otp-input'
-const DATA_KEY = 'coreui.otp-input'
+const DATA_KEY = 'ui.otp-input'
 const EVENT_KEY = `.${DATA_KEY}`
 const DATA_API_KEY = '.data-api'
 
@@ -32,7 +32,7 @@ const EVENT_PASTE = `paste`
 const EVENT_LOAD_DATA_API = `load${EVENT_KEY}${DATA_API_KEY}`
 
 const SELECTOR_FORM_OTP_CONTROL = '.form-otp-control'
-const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle="otp"]'
+const SELECTOR_DATA_TOGGLE = '[data-ui-toggle="otp"]'
 
 const Default = {
   ariaLabel: (index, total) => `Digit ${index + 1} of ${total}`,

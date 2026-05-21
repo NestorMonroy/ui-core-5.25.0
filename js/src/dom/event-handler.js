@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
  * UI dom/event-handler.js
- * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+ * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
  *
  * This is a modified version of the Bootstrap's dom/event-handler.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -210,7 +210,7 @@ function removeNamespacedHandlers(element, events, typeEvent, namespace) {
 }
 
 function getTypeEvent(event) {
-  // allow to get the native events from namespaced events ('click.coreui.button' --> 'click')
+  // allow to get the native events from namespaced events ('click.ui.button' --> 'click')
   event = event.replace(stripNameRegex, '')
   return customEvents[event] || event
 }

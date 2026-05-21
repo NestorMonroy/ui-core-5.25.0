@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
  * UI base-component.js
- * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+ * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
  *
  * This component is a modified version of the Bootstrap's base-component.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -74,7 +74,7 @@ class BaseComponent extends Config {
   }
 
   static get DATA_KEY() {
-    return `coreui.${this.NAME}`
+    return `ui.${this.NAME}`
   }
 
   static get EVENT_KEY() {

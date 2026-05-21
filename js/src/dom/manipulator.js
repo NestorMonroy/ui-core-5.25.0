@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
  * UI dom/manipulator.js
- * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+ * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
  *
  * This is a modified version of the Bootstrap's dom/manipulator.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -42,11 +42,11 @@ function normalizeDataKey(key) {
 
 const Manipulator = {
   setDataAttribute(element, key, value) {
-    element.setAttribute(`data-coreui-${normalizeDataKey(key)}`, value)
+    element.setAttribute(`data-ui-${normalizeDataKey(key)}`, value)
   },
 
   removeDataAttribute(element, key) {
-    element.removeAttribute(`data-coreui-${normalizeDataKey(key)}`)
+    element.removeAttribute(`data-ui-${normalizeDataKey(key)}`)
   },
 
   getDataAttributes(element) {
@@ -55,10 +55,10 @@ const Manipulator = {
     }
 
     const attributes = {}
-    const coreuiKeys = Object.keys(element.dataset).filter(key => key.startsWith('coreui') && !key.startsWith('coreuiConfig'))
+    const uiKeys = Object.keys(element.dataset).filter(key => key.startsWith('ui') && !key.startsWith('uiConfig'))
 
-    for (const key of coreuiKeys) {
-      let pureKey = key.replace(/^coreui/, '')
+    for (const key of uiKeys) {
+      let pureKey = key.replace(/^ui/, '')
       pureKey = pureKey.charAt(0).toLowerCase() + pureKey.slice(1)
       attributes[pureKey] = normalizeData(element.dataset[key])
     }
@@ -67,7 +67,7 @@ const Manipulator = {
   },
 
   getDataAttribute(element, key) {
-    return normalizeData(element.getAttribute(`data-coreui-${normalizeDataKey(key)}`))
+    return normalizeData(element.getAttribute(`data-ui-${normalizeDataKey(key)}`))
   }
 }
 

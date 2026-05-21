@@ -19,7 +19,7 @@ import { getUID } from './util/index.js'
  */
 
 const NAME = 'chip-input'
-const DATA_KEY = 'coreui.chip-input'
+const DATA_KEY = 'ui.chip-input'
 const EVENT_KEY = `.${DATA_KEY}`
 const DATA_API_KEY = '.data-api'
 
@@ -29,7 +29,7 @@ const EVENT_CHANGE = `change${EVENT_KEY}`
 const EVENT_SELECT = `select${EVENT_KEY}`
 const EVENT_INPUT = `input${EVENT_KEY}`
 
-const SELECTOR_DATA_CHIP_INPUT = '[data-coreui-chip-input]'
+const SELECTOR_DATA_CHIP_INPUT = '[data-ui-chip-input]'
 const SELECTOR_CHIP = '.chip'
 const SELECTOR_CHIP_ACTIVE = `${SELECTOR_CHIP}.active`
 const SELECTOR_CHIP_INPUT_LABEL = '.chip-input-label'
@@ -303,7 +303,7 @@ class ChipInput extends BaseComponent {
   _createChip(value) {
     const chip = document.createElement('span')
     chip.className = CLASS_NAME_CHIP
-    chip.dataset.coreuiChipValue = value
+    chip.dataset.uiChipValue = value
     chip.append(document.createTextNode(value))
     this._applyChipClassName(chip, value)
 
@@ -331,8 +331,8 @@ class ChipInput extends BaseComponent {
   }
 
   _getChipValue(chip) {
-    if (chip.dataset.coreuiChipValue) {
-      return chip.dataset.coreuiChipValue
+    if (chip.dataset.uiChipValue) {
+      return chip.dataset.uiChipValue
     }
 
     const clone = chip.cloneNode(true)
@@ -426,21 +426,21 @@ class ChipInput extends BaseComponent {
       })
     }
 
-    EventHandler.on(this._element, 'selected.coreui.chip', SELECTOR_CHIP, () => {
+    EventHandler.on(this._element, 'selected.ui.chip', SELECTOR_CHIP, () => {
       this._emitSelectionChange()
     })
 
-    EventHandler.on(this._element, 'deselected.coreui.chip', SELECTOR_CHIP, () => {
+    EventHandler.on(this._element, 'deselected.ui.chip', SELECTOR_CHIP, () => {
       this._emitSelectionChange()
     })
 
-    EventHandler.on(this._element, 'remove.coreui.chip', SELECTOR_CHIP, event => {
+    EventHandler.on(this._element, 'remove.ui.chip', SELECTOR_CHIP, event => {
       if (this._disabled || this._readonly) {
         event.preventDefault()
       }
     })
 
-    EventHandler.on(this._element, 'removed.coreui.chip', SELECTOR_CHIP, event => {
+    EventHandler.on(this._element, 'removed.ui.chip', SELECTOR_CHIP, event => {
       const chip = event.target.closest(SELECTOR_CHIP)
       if (chip) {
         this._handleChipRemoved(chip)

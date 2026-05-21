@@ -1,7 +1,7 @@
 /*!
   * UI date-range-picker.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('@popperjs/core'), require('./base-component.js'), require('./calendar.js'), require('./time-picker.js'), require('./dom/event-handler.js'), require('./dom/manipulator.js'), require('./dom/selector-engine.js'), require('./util/sanitizer.js'), require('./util/index.js'), require('./util/calendar.js'), require('./util/focustrap.js')) :
@@ -41,7 +41,7 @@
    */
 
   const NAME = 'date-range-picker';
-  const DATA_KEY = 'coreui.date-range-picker';
+  const DATA_KEY = 'ui.date-range-picker';
   const EVENT_KEY = `.${DATA_KEY}`;
   const DATA_API_KEY = '.data-api';
   const DISALLOWED_ATTRIBUTES = new Set(['sanitize', 'allowList', 'sanitizeFn']);
@@ -86,7 +86,7 @@
   const CLASS_NAME_TIME_PICKERS = 'date-picker-timepickers';
   const CLASS_NAME_WAS_VALIDATED = 'was-validated';
   const SELECTOR_CALENDAR = '.calendars';
-  const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle="date-range-picker"]:not(.disabled):not(:disabled)';
+  const SELECTOR_DATA_TOGGLE = '[data-ui-toggle="date-range-picker"]:not(.disabled):not(:disabled)';
   const SELECTOR_DATA_TOGGLE_SHOWN = `${SELECTOR_DATA_TOGGLE}.${CLASS_NAME_SHOW}`;
   const SELECTOR_INPUT = '.date-picker-input';
   const SELECTOR_WAS_VALIDATED = 'form.was-validated';
@@ -458,20 +458,20 @@
     }
     _addCalendarEventListeners() {
       for (const calendar of SelectorEngine.find(SELECTOR_CALENDAR, this._menu)) {
-        EventHandler.on(calendar, 'startDateChange.coreui.calendar', event => {
+        EventHandler.on(calendar, 'startDateChange.ui.calendar', event => {
           this._changeStartDate(event.date);
           if (!this._config.range && !this._config.footer && !this._config.timepicker) {
             this.hide();
           }
         });
-        EventHandler.on(calendar, 'endDateChange.coreui.calendar', event => {
+        EventHandler.on(calendar, 'endDateChange.ui.calendar', event => {
           this._changeEndDate(event.date);
           if (this._startDate && !this._config.footer && !this._config.timepicker) {
             this.hide();
           }
         });
         if (this._config.previewDateOnHover && !this._config.disabled) {
-          EventHandler.on(calendar, 'cellHover.coreui.calendar', event => {
+          EventHandler.on(calendar, 'cellHover.ui.calendar', event => {
             if (this._selectEndDate) {
               const previewValue = event.date ? this._setInputValue(event.date) : this._setInputValue(this._endDate);
               this._updatePreviewInputVisibility(this._endPreviewInput, event.date ? previewValue : '');
@@ -481,7 +481,7 @@
             this._updatePreviewInputVisibility(this._startPreviewInput, event.date ? previewValue : '');
           });
         }
-        EventHandler.on(calendar, 'selectEndChange.coreui.calendar', event => {
+        EventHandler.on(calendar, 'selectEndChange.ui.calendar', event => {
           this._selectEndDate = event.value;
         });
       }
@@ -697,10 +697,10 @@
       calendarEl.classList.add(CLASS_NAME_CALENDAR);
       this._calendars.append(calendarEl);
       this._calendar = new Calendar(calendarEl, this._getCalendarConfig());
-      EventHandler.on(calendarEl, 'calendarDateChange.coreui.calendar', event => {
+      EventHandler.on(calendarEl, 'calendarDateChange.ui.calendar', event => {
         this._calendarDate = event.date;
       });
-      EventHandler.on(calendarEl, 'calendarMouseleave.coreui.calendar', () => {
+      EventHandler.on(calendarEl, 'calendarMouseleave.ui.calendar', () => {
         this._updatePreviewInputVisibility(this._startPreviewInput, '');
         this._updatePreviewInputVisibility(this._endPreviewInput, '');
       });
@@ -710,7 +710,7 @@
           timePickerStartEl.classList.add(CLASS_NAME_TIME_PICKER);
           this._timePickerStart = new TimePicker(timePickerStartEl, this._getTimePickerConfig(true));
           this._timepickers.append(timePickerStartEl);
-          EventHandler.on(timePickerStartEl, 'timeChange.coreui.time-picker', event => {
+          EventHandler.on(timePickerStartEl, 'timeChange.ui.time-picker', event => {
             this._changeStartDate(event.date, true);
             this._calendar.update(this._getCalendarConfig());
           });
@@ -718,7 +718,7 @@
           timePickerEndEl.classList.add(CLASS_NAME_TIME_PICKER);
           this._timePickerEnd = new TimePicker(timePickerEndEl, this._getTimePickerConfig(false));
           this._timepickers.append(timePickerEndEl);
-          EventHandler.on(timePickerEndEl, 'timeChange.coreui.time-picker', event => {
+          EventHandler.on(timePickerEndEl, 'timeChange.ui.time-picker', event => {
             this._changeEndDate(event.date, true);
             this._calendar.update(this._getCalendarConfig());
           });
@@ -735,7 +735,7 @@
               this._timePickerEnd = _timepicker;
             }
             this._timepickers.append(timePickerEl);
-            EventHandler.on(timePickerEl, 'timeChange.coreui.time-picker', event => {
+            EventHandler.on(timePickerEl, 'timeChange.ui.time-picker', event => {
               if (index === 0) {
                 this._changeStartDate(event.date, true);
               } else {
@@ -834,7 +834,7 @@
     }
     _createPopper() {
       if (typeof Popper__namespace === 'undefined') {
-        throw new TypeError('CoreUI\'s date picker require Popper (https://popper.js.org)');
+        throw new TypeError('ui\'s date picker require Popper (https://popper.js.org)');
       }
       const popperConfig = {
         modifiers: [{

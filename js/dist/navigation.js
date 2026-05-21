@@ -1,7 +1,7 @@
 /*!
   * UI navigation.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('./base-component.js'), require('./dom/data.js'), require('./dom/event-handler.js'), require('./dom/selector-engine.js'), require('./util/index.js')) :
@@ -12,7 +12,7 @@
   /**
    * --------------------------------------------------------------------------
    * UI navigation.js
-   * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+   * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
 
@@ -24,7 +24,7 @@
    */
 
   const NAME = 'navigation';
-  const DATA_KEY = 'coreui.navigation';
+  const DATA_KEY = 'ui.navigation';
   const EVENT_KEY = `.${DATA_KEY}`;
   const DATA_API_KEY = '.data-api';
   const Default = {
@@ -45,7 +45,7 @@
   const SELECTOR_NAV_GROUP_ITEMS = '.nav-group-items';
   const SELECTOR_NAV_GROUP_TOGGLE = '.nav-group-toggle';
   const SELECTOR_NAV_LINK = '.nav-link';
-  const SELECTOR_DATA_NAVIGATION = '[data-coreui-navigation], [data-coreui="navigation"]';
+  const SELECTOR_DATA_NAVIGATION = '[data-ui-navigation], [data-ui="navigation"]';
 
   /**
    * ------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*!
   * UI range-slider.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('./base-component.js'), require('./dom/event-handler.js'), require('./dom/manipulator.js'), require('./dom/selector-engine.js'), require('./util/index.js'), require('./util/sanitizer.js')) :
@@ -22,7 +22,7 @@
    */
 
   const NAME = 'range-slider';
-  const DATA_KEY = 'coreui.range-slider';
+  const DATA_KEY = 'ui.range-slider';
   const EVENT_KEY = `.${DATA_KEY}`;
   const DATA_API_KEY = '.data-api';
   const DISALLOWED_ATTRIBUTES = new Set(['sanitize', 'allowList', 'sanitizeFn']);
@@ -45,7 +45,7 @@
   const CLASS_NAME_RANGE_SLIDER_TOOLTIP_INNER = 'range-slider-tooltip-inner';
   const CLASS_NAME_RANGE_SLIDER_TRACK = 'range-slider-track';
   const CLASS_NAME_RANGE_SLIDER_VERTICAL = 'range-slider-vertical';
-  const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle="range-slider"]';
+  const SELECTOR_DATA_TOGGLE = '[data-ui-toggle="range-slider"]';
   const SELECTOR_RANGE_SLIDER_INPUT = '.range-slider-input';
   const SELECTOR_RANGE_SLIDER_INPUTS_CONTAINER = '.range-slider-inputs-container';
   const SELECTOR_RANGE_SLIDER_LABEL = '.range-slider-label';
@@ -267,7 +267,7 @@
         // Determine label value
         const labelValue = typeof label === 'object' ? label.value : min + percentage / 100 * (max - min);
 
-        // Set data-coreui-value attribute
+        // Set data-ui-value attribute
         Manipulator.setDataAttribute(labelElement, 'value', labelValue);
 
         // Set label content

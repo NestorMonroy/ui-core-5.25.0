@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
  * UI scrollspy.js
- * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+ * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
  *
  * This component is a modified version of the Bootstrap's scrollspy.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -20,7 +20,7 @@ import {
  */
 
 const NAME = 'scrollspy'
-const DATA_KEY = 'coreui.scrollspy'
+const DATA_KEY = 'ui.scrollspy'
 const EVENT_KEY = `.${DATA_KEY}`
 const DATA_API_KEY = '.data-api'
 
@@ -31,7 +31,7 @@ const EVENT_LOAD_DATA_API = `load${EVENT_KEY}${DATA_API_KEY}`
 const CLASS_NAME_DROPDOWN_ITEM = 'dropdown-item'
 const CLASS_NAME_ACTIVE = 'active'
 
-const SELECTOR_DATA_SPY = '[data-coreui-spy="scroll"]'
+const SELECTOR_DATA_SPY = '[data-ui-spy="scroll"]'
 const SELECTOR_TARGET_LINKS = '[href]'
 const SELECTOR_NAV_LIST_GROUP = '.nav, .list-group'
 const SELECTOR_NAV_LINKS = '.nav-link'

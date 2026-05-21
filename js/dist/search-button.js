@@ -1,7 +1,7 @@
 /*!
   * UI search-button.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('./base-component.js'), require('./dom/event-handler.js'), require('./util/index.js')) :
@@ -12,7 +12,7 @@
   /**
    * --------------------------------------------------------------------------
    * UI search-button.js
-   * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+   * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
 
@@ -22,7 +22,7 @@
    */
 
   const NAME = 'search-button';
-  const DATA_KEY = 'coreui.search-button';
+  const DATA_KEY = 'ui.search-button';
   const EVENT_KEY = `.${DATA_KEY}`;
   const DATA_API_KEY = '.data-api';
   const EVENT_BLUR_DATA_API = `blur${EVENT_KEY}${DATA_API_KEY}`;
@@ -33,7 +33,7 @@
   const CLASS_NAME_SHORTCUT_KEYS = 'search-button-keys';
   const CLASS_NAME_SHORTCUT_KEY = 'search-button-key';
   const CLASS_NAME_ACTIVE = 'active';
-  const SELECTOR_DATA_TOGGLE = '[data-coreui-search-button]';
+  const SELECTOR_DATA_TOGGLE = '[data-ui-search-button]';
   const SELECTOR_EDITABLE_TARGET = 'input, textarea, select, [contenteditable=""], [contenteditable="true"], [contenteditable="plaintext-only"]';
   const SELECTOR_PLACEHOLDER = '.search-button-placeholder';
   const SELECTOR_SHORTCUT_KEY = '.search-button-key';
@@ -150,14 +150,14 @@
         const shortcutKey = document.createElement('span');
         shortcutKey.className = CLASS_NAME_SHORTCUT_KEY;
         shortcutKey.textContent = key;
-        shortcutKey.dataset.coreuiSearchButtonKey = key;
+        shortcutKey.dataset.uiSearchButtonKey = key;
         shortcutKeys.append(shortcutKey);
       }
     }
     _syncActiveKeys(event) {
       const pressedKeys = this._getPressedKeys(event);
       for (const shortcutKey of this._element.querySelectorAll(SELECTOR_SHORTCUT_KEY)) {
-        shortcutKey.classList.toggle(CLASS_NAME_ACTIVE, pressedKeys.has(shortcutKey.dataset.coreuiSearchButtonKey));
+        shortcutKey.classList.toggle(CLASS_NAME_ACTIVE, pressedKeys.has(shortcutKey.dataset.uiSearchButtonKey));
       }
     }
     _clearActiveKeys() {

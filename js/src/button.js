@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
  * UI button.js
- * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+ * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
  *
  * This component is a modified version of the Bootstrap's button.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -17,12 +17,12 @@ import { defineJQueryPlugin } from './util/index.js'
  */
 
 const NAME = 'button'
-const DATA_KEY = 'coreui.button'
+const DATA_KEY = 'ui.button'
 const EVENT_KEY = `.${DATA_KEY}`
 const DATA_API_KEY = '.data-api'
 
 const CLASS_NAME_ACTIVE = 'active'
-const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle="button"]'
+const SELECTOR_DATA_TOGGLE = '[data-ui-toggle="button"]'
 const EVENT_CLICK_DATA_API = `click${EVENT_KEY}${DATA_API_KEY}`
 
 /**

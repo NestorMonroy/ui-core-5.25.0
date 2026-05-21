@@ -1,7 +1,7 @@
 /*!
   * UI rating.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('./base-component.js'), require('./dom/event-handler.js'), require('./dom/manipulator.js'), require('./dom/selector-engine.js'), require('./util/sanitizer.js'), require('./util/index.js'), require('./tooltip.js')) :
@@ -22,7 +22,7 @@
    */
 
   const NAME = 'rating';
-  const DATA_KEY = 'coreui.rating';
+  const DATA_KEY = 'ui.rating';
   const EVENT_KEY = `.${DATA_KEY}`;
   const DATA_API_KEY = '.data-api';
   const DISALLOWED_ATTRIBUTES = new Set(['sanitize', 'allowList', 'sanitizeFn']);
@@ -44,7 +44,7 @@
   const CLASS_NAME_RATING_ITEM_INPUT = 'rating-item-input';
   const CLASS_NAME_RATING_ITEM_LABEL = 'rating-item-label';
   const CLASS_NAME_READONLY = 'readonly';
-  const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle="rating"]';
+  const SELECTOR_DATA_TOGGLE = '[data-ui-toggle="rating"]';
   const SELECTOR_RATING_ITEM_INPUT = '.rating-item-input';
   const SELECTOR_RATING_ITEM_LABEL = '.rating-item-label';
 

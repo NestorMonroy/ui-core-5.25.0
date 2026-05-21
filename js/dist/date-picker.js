@@ -1,7 +1,7 @@
 /*!
   * UI date-picker.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('./date-range-picker.js'), require('./dom/event-handler.js'), require('./dom/selector-engine.js'), require('./util/index.js')) :
@@ -22,7 +22,7 @@
    */
 
   const NAME = 'date-picker';
-  const DATA_KEY = 'coreui.date-picker';
+  const DATA_KEY = 'ui.date-picker';
   const EVENT_KEY = `.${DATA_KEY}`;
   const DATA_API_KEY = '.data-api';
   const TAB_KEY = 'Tab';
@@ -36,7 +36,7 @@
   const EVENT_KEYUP_DATA_API = `keyup${EVENT_KEY}${DATA_API_KEY}`;
   const EVENT_LOAD_DATA_API = `load${EVENT_KEY}${DATA_API_KEY}`;
   const CLASS_NAME_SHOW = 'show';
-  const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle="date-picker"]:not(.disabled):not(:disabled)';
+  const SELECTOR_DATA_TOGGLE = '[data-ui-toggle="date-picker"]:not(.disabled):not(:disabled)';
   const SELECTOR_DATA_TOGGLE_SHOWN = `${SELECTOR_DATA_TOGGLE}.${CLASS_NAME_SHOW}`;
   const Default = {
     ...DateRangePicker.Default,
@@ -69,21 +69,21 @@
     // Overrides
     _addEventListeners() {
       super._addEventListeners();
-      EventHandler.on(this._element, 'startDateChange.coreui.date-range-picker', event => {
+      EventHandler.on(this._element, 'startDateChange.ui.date-range-picker', event => {
         EventHandler.trigger(this._element, EVENT_DATE_CHANGE, {
           date: event.date
         });
       });
-      EventHandler.on(this._element, 'show.coreui.date-range-picker', () => {
+      EventHandler.on(this._element, 'show.ui.date-range-picker', () => {
         EventHandler.trigger(this._element, EVENT_SHOW);
       });
-      EventHandler.on(this._element, 'shown.coreui.date-range-picker', () => {
+      EventHandler.on(this._element, 'shown.ui.date-range-picker', () => {
         EventHandler.trigger(this._element, EVENT_SHOWN);
       });
-      EventHandler.on(this._element, 'hide.coreui.date-range-picker', () => {
+      EventHandler.on(this._element, 'hide.ui.date-range-picker', () => {
         EventHandler.trigger(this._element, EVENT_HIDE);
       });
-      EventHandler.on(this._element, 'hidden.coreui.date-range-picker', () => {
+      EventHandler.on(this._element, 'hidden.ui.date-range-picker', () => {
         EventHandler.trigger(this._element, EVENT_HIDDEN);
       });
     }

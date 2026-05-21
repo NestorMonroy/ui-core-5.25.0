@@ -42,7 +42,7 @@ import {
  */
 
 const NAME = 'calendar'
-const DATA_KEY = 'coreui.calendar'
+const DATA_KEY = 'ui.calendar'
 const EVENT_KEY = `.${DATA_KEY}`
 const DATA_API_KEY = '.data-api'
 const DISALLOWED_ATTRIBUTES = new Set(['sanitize', 'allowList', 'sanitizeFn'])
@@ -86,7 +86,7 @@ const SELECTOR_CALENDAR_CELL = '.calendar-cell'
 const SELECTOR_CALENDAR_CELL_CLICKABLE = `${SELECTOR_CALENDAR_CELL}[tabindex="0"]`
 const SELECTOR_CALENDAR_ROW = '.calendar-row'
 const SELECTOR_CALENDAR_ROW_CLICKABLE = `${SELECTOR_CALENDAR_ROW}[tabindex="0"]`
-const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle="calendar"]'
+const SELECTOR_DATA_TOGGLE = '[data-ui-toggle="calendar"]'
 
 const Default = {
   allowList: DefaultAllowlist,
@@ -681,7 +681,7 @@ class Calendar extends BaseComponent {
                     class="${cellAttributes.className}"
                     tabindex="${cellAttributes.tabIndex}"
                     ${cellAttributes.ariaSelected ? 'aria-selected="true"' : ''}
-                    data-coreui-date="${date}"
+                    data-ui-date="${date}"
                   >
                     <div class="${CLASS_NAME_CALENDAR_CELL_INNER} day">
                       ${this._config.renderDayCell ? this._sanitizeHtml(this._config.renderDayCell(date, cellAttributes.meta)) : date.toLocaleDateString(this._config.locale, { day: this._config.dayFormat })}
@@ -702,7 +702,7 @@ class Calendar extends BaseComponent {
                   class="${cellAttributes.className}"
                   tabindex="${cellAttributes.tabIndex}"
                   ${cellAttributes.ariaSelected ? 'aria-selected="true"' : ''}
-                  data-coreui-date="${date.toDateString()}"
+                  data-ui-date="${date.toDateString()}"
                 >
                   <div class="${CLASS_NAME_CALENDAR_CELL_INNER} month">
                     ${this._config.renderMonthCell ? this._sanitizeHtml(this._config.renderMonthCell(date, cellAttributes.meta)) : month}
@@ -722,7 +722,7 @@ class Calendar extends BaseComponent {
                   class="${cellAttributes.className}"
                   tabindex="${cellAttributes.tabIndex}"
                   ${cellAttributes.ariaSelected ? 'aria-selected="true"' : ''}
-                  data-coreui-date="${date.toDateString()}"
+                  data-ui-date="${date.toDateString()}"
                 >
                   <div class="${CLASS_NAME_CALENDAR_CELL_INNER} quarter">
                     ${this._config.renderQuarterCell ? this._sanitizeHtml(this._config.renderQuarterCell(date, cellAttributes.meta)) : `Q${index + 1}`}
@@ -741,7 +741,7 @@ class Calendar extends BaseComponent {
                   class="${cellAttributes.className}"
                   tabindex="${cellAttributes.tabIndex}"
                   ${cellAttributes.ariaSelected ? 'aria-selected="true"' : ''}
-                  data-coreui-date="${date.toDateString()}"
+                  data-ui-date="${date.toDateString()}"
                 >
                   <div class="${CLASS_NAME_CALENDAR_CELL_INNER} year">
                     ${this._config.renderYearCell ? this._sanitizeHtml(this._config.renderYearCell(date, cellAttributes.meta)) : date.toLocaleDateString(this._config.locale, { year: this._config.yearFormat })}

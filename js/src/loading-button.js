@@ -15,7 +15,7 @@ import { defineJQueryPlugin } from './util/index.js'
  */
 
 const NAME = 'loading-button'
-const DATA_KEY = 'coreui.loading-button'
+const DATA_KEY = 'ui.loading-button'
 const EVENT_KEY = `.${DATA_KEY}`
 const DATA_API_KEY = '.data-api'
 
@@ -27,7 +27,7 @@ const CLASS_NAME_IS_LOADING = 'is-loading'
 const CLASS_NAME_LOADING_BUTTON = 'btn-loading'
 const CLASS_NAME_LOADING_BUTTON_SPINNER = 'btn-loading-spinner'
 
-const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle="loading-button"]'
+const SELECTOR_DATA_TOGGLE = '[data-ui-toggle="loading-button"]'
 
 const Default = {
   disabledOnLoading: false,

@@ -15,14 +15,14 @@ import { defineJQueryPlugin } from './util/index.js'
  */
 
 const NAME = 'password-input'
-const DATA_KEY = 'coreui.password-input'
+const DATA_KEY = 'ui.password-input'
 const EVENT_KEY = `.${DATA_KEY}`
 const DATA_API_KEY = '.data-api'
 
 const EVENT_CLICK_DATA_API = `click${EVENT_KEY}${DATA_API_KEY}`
 
 const SELECTOR_FORM_CONTROL = '.form-control'
-const SELECTOR_DATA_TOGGLE = `${SELECTOR_FORM_CONTROL}:not([disabled]) ~ [data-coreui-toggle="password"]`
+const SELECTOR_DATA_TOGGLE = `${SELECTOR_FORM_CONTROL}:not([disabled]) ~ [data-ui-toggle="password"]`
 
 /**
  * Class definition

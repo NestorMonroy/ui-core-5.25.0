@@ -1,7 +1,7 @@
 /*!
   * UI sidebar.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('./base-component.js'), require('./dom/event-handler.js'), require('./dom/manipulator.js'), require('./util/index.js'), require('./util/backdrop.js'), require('./util/scrollbar.js')) :
@@ -12,7 +12,7 @@
   /**
    * --------------------------------------------------------------------------
    * UI sidebar.js
-   * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+   * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
 
@@ -24,7 +24,7 @@
    */
 
   const NAME = 'sidebar';
-  const DATA_KEY = 'coreui.sidebar';
+  const DATA_KEY = 'ui.sidebar';
   const EVENT_KEY = `.${DATA_KEY}`;
   const DATA_API_KEY = '.data-api';
   const Default = {};
@@ -42,8 +42,8 @@
   const EVENT_SHOWN = `shown${EVENT_KEY}`;
   const EVENT_CLICK_DATA_API = `click${EVENT_KEY}${DATA_API_KEY}`;
   const EVENT_LOAD_DATA_API = `load${EVENT_KEY}${DATA_API_KEY}`;
-  const SELECTOR_DATA_CLOSE = '[data-coreui-close="sidebar"]';
-  const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle]';
+  const SELECTOR_DATA_CLOSE = '[data-ui-close="sidebar"]';
+  const SELECTOR_DATA_TOGGLE = '[data-ui-toggle]';
   const SELECTOR_SIDEBAR = '.sidebar';
 
   /**

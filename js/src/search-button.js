@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
  * UI search-button.js
- * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+ * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -14,7 +14,7 @@ import { defineJQueryPlugin } from './util/index.js'
  */
 
 const NAME = 'search-button'
-const DATA_KEY = 'coreui.search-button'
+const DATA_KEY = 'ui.search-button'
 const EVENT_KEY = `.${DATA_KEY}`
 const DATA_API_KEY = '.data-api'
 
@@ -28,7 +28,7 @@ const CLASS_NAME_SHORTCUT_KEYS = 'search-button-keys'
 const CLASS_NAME_SHORTCUT_KEY = 'search-button-key'
 const CLASS_NAME_ACTIVE = 'active'
 
-const SELECTOR_DATA_TOGGLE = '[data-coreui-search-button]'
+const SELECTOR_DATA_TOGGLE = '[data-ui-search-button]'
 const SELECTOR_EDITABLE_TARGET = 'input, textarea, select, [contenteditable=""], [contenteditable="true"], [contenteditable="plaintext-only"]'
 const SELECTOR_PLACEHOLDER = '.search-button-placeholder'
 const SELECTOR_SHORTCUT_KEY = '.search-button-key'
@@ -170,7 +170,7 @@ class SearchButton extends BaseComponent {
       const shortcutKey = document.createElement('span')
       shortcutKey.className = CLASS_NAME_SHORTCUT_KEY
       shortcutKey.textContent = key
-      shortcutKey.dataset.coreuiSearchButtonKey = key
+      shortcutKey.dataset.uiSearchButtonKey = key
       shortcutKeys.append(shortcutKey)
     }
   }
@@ -179,7 +179,7 @@ class SearchButton extends BaseComponent {
     const pressedKeys = this._getPressedKeys(event)
 
     for (const shortcutKey of this._element.querySelectorAll(SELECTOR_SHORTCUT_KEY)) {
-      shortcutKey.classList.toggle(CLASS_NAME_ACTIVE, pressedKeys.has(shortcutKey.dataset.coreuiSearchButtonKey))
+      shortcutKey.classList.toggle(CLASS_NAME_ACTIVE, pressedKeys.has(shortcutKey.dataset.uiSearchButtonKey))
     }
   }
 

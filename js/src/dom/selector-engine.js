@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
  * UI dom/selector-engine.js
- * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+ * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
  *
  * This is a modified version of the Bootstrap's dom/selector-engine.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -11,7 +11,7 @@
 import { isDisabled, isVisible, parseSelector } from '../util/index.js'
 
 const getSelector = element => {
-  let selector = element.getAttribute('data-coreui-target')
+  let selector = element.getAttribute('data-ui-target')
 
   if (!selector || selector === '#') {
     let hrefAttribute = element.getAttribute('href')

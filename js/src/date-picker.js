@@ -15,7 +15,7 @@ import { defineJQueryPlugin } from './util/index.js'
  */
 
 const NAME = 'date-picker'
-const DATA_KEY = 'coreui.date-picker'
+const DATA_KEY = 'ui.date-picker'
 const EVENT_KEY = `.${DATA_KEY}`
 const DATA_API_KEY = '.data-api'
 
@@ -33,7 +33,7 @@ const EVENT_LOAD_DATA_API = `load${EVENT_KEY}${DATA_API_KEY}`
 
 const CLASS_NAME_SHOW = 'show'
 
-const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle="date-picker"]:not(.disabled):not(:disabled)'
+const SELECTOR_DATA_TOGGLE = '[data-ui-toggle="date-picker"]:not(.disabled):not(:disabled)'
 const SELECTOR_DATA_TOGGLE_SHOWN = `${SELECTOR_DATA_TOGGLE}.${CLASS_NAME_SHOW}`
 
 const Default = {
@@ -71,25 +71,25 @@ class DatePicker extends DateRangePicker {
   _addEventListeners() {
     super._addEventListeners()
 
-    EventHandler.on(this._element, 'startDateChange.coreui.date-range-picker', event => {
+    EventHandler.on(this._element, 'startDateChange.ui.date-range-picker', event => {
       EventHandler.trigger(this._element, EVENT_DATE_CHANGE, {
         date: event.date
       })
     })
 
-    EventHandler.on(this._element, 'show.coreui.date-range-picker', () => {
+    EventHandler.on(this._element, 'show.ui.date-range-picker', () => {
       EventHandler.trigger(this._element, EVENT_SHOW)
     })
 
-    EventHandler.on(this._element, 'shown.coreui.date-range-picker', () => {
+    EventHandler.on(this._element, 'shown.ui.date-range-picker', () => {
       EventHandler.trigger(this._element, EVENT_SHOWN)
     })
 
-    EventHandler.on(this._element, 'hide.coreui.date-range-picker', () => {
+    EventHandler.on(this._element, 'hide.ui.date-range-picker', () => {
       EventHandler.trigger(this._element, EVENT_HIDE)
     })
 
-    EventHandler.on(this._element, 'hidden.coreui.date-range-picker', () => {
+    EventHandler.on(this._element, 'hidden.ui.date-range-picker', () => {
       EventHandler.trigger(this._element, EVENT_HIDDEN)
     })
   }

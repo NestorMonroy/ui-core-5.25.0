@@ -1,5 +1,5 @@
 {
-  "name": "@coreui/coreui-pro",
+  "name": "@ui/ui-pro",
   "description": "The most popular front-end framework for developing responsive, mobile-first projects on the web rewritten by the UI Team",
   "version": "5.25.0",
   "config": {
@@ -15,7 +15,7 @@
     "web"
   ],
   "homepage": "",
-  "author": "The UI Team (https://github.com/orgs/coreui/people)",
+  "author": "The UI Team (https://github.com/orgs/ui/people)",
   "scripts": {
     "start": "npm-run-all --parallel watch docs-serve",
     "bundlewatch": "bundlewatch --config .bundlewatch.config.json",
@@ -41,9 +41,9 @@
     "js-compile-plugins": "node build/build-plugins.mjs",
     "js-lint": "eslint --cache --cache-location .cache/.eslintcache --report-unused-disable-directives",
     "js-minify": "npm-run-all --aggregate-output --parallel js-minify-*",
-    "js-minify-standalone": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/coreui.js.map,includeSources,url=coreui.min.js.map\" --output dist/js/coreui.min.js dist/js/coreui.js",
-    "js-minify-standalone-esm": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/coreui.esm.js.map,includeSources,url=coreui.esm.min.js.map\" --output dist/js/coreui.esm.min.js dist/js/coreui.esm.js",
-    "js-minify-bundle": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/coreui.bundle.js.map,includeSources,url=coreui.bundle.min.js.map\" --output dist/js/coreui.bundle.min.js dist/js/coreui.bundle.js",
+    "js-minify-standalone": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/ui.js.map,includeSources,url=ui.min.js.map\" --output dist/js/ui.min.js dist/js/ui.js",
+    "js-minify-standalone-esm": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/ui.esm.js.map,includeSources,url=ui.esm.min.js.map\" --output dist/js/ui.esm.min.js dist/js/ui.esm.js",
+    "js-minify-bundle": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/ui.bundle.js.map,includeSources,url=ui.bundle.min.js.map\" --output dist/js/ui.bundle.min.js dist/js/ui.bundle.js",
     "js-minify-standalone-bootstrap": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/bootstrap.js.map,includeSources,url=bootstrap.min.js.map\" --output dist/js/bootstrap.min.js dist/js/bootstrap.js",
     "js-minify-standalone-bootstrap-esm": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/bootstrap.esm.js.map,includeSources,url=bootstrap.esm.min.js.map\" --output dist/js/bootstrap.esm.min.js dist/js/bootstrap.esm.js",
     "js-minify-bundle-bootstrap": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/bootstrap.bundle.js.map,includeSources,url=bootstrap.bundle.min.js.map\" --output dist/js/bootstrap.bundle.min.js dist/js/bootstrap.bundle.js",
@@ -68,7 +68,7 @@
     "release": "npm-run-all dist release-sri docs-build release-zip*",
     "release-sri": "node build/generate-sri.mjs",
     "release-version": "node build/change-version.mjs",
-    "release-zip": "cross-env-shell \"rm -rf coreui-pro-$npm_package_version-dist coreui-pro-$npm_package_version-dist.zip && cp -r dist/ coreui-pro-$npm_package_version-dist && zip -qr9 coreui-pro-$npm_package_version-dist.zip coreui-pro-$npm_package_version-dist && rm -rf coreui-pro-$npm_package_version-dist\"",
+    "release-zip": "cross-env-shell \"rm -rf ui-pro-$npm_package_version-dist ui-pro-$npm_package_version-dist.zip && cp -r dist/ ui-pro-$npm_package_version-dist && zip -qr9 ui-pro-$npm_package_version-dist.zip ui-pro-$npm_package_version-dist && rm -rf ui-pro-$npm_package_version-dist\"",
     "dist": "npm-run-all --aggregate-output --parallel css js",
     "test": "npm-run-all lint dist js-test docs-build docs-lint",
     "watch": "npm-run-all --parallel watch-*",
@@ -78,16 +78,16 @@
     "watch-js-main": "nodemon --watch js/src/ --ext js --exec \"npm-run-all js-lint js-compile\"",
     "watch-js-docs": "nodemon --watch docs/assets/js/ --ext js --exec \"npm run js-lint\""
   },
-  "style": "dist/css/coreui.css",
-  "sass": "scss/coreui.scss",
-  "main": "dist/js/coreui.js",
-  "module": "dist/js/coreui.esm.js",
+  "style": "dist/css/ui.css",
+  "sass": "scss/ui.scss",
+  "main": "dist/js/ui.js",
+  "module": "dist/js/ui.esm.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/coreui/coreui.git"
+    "url": "git+https://github.com/ui/ui.git"
   },
   "bugs": {
-    "url": "https://github.com/coreui/coreui/issues"
+    "url": "https://github.com/ui/ui/issues"
   },
   "license": "SEE LICENSE IN LICENSE",
   "peerDependencies": {
@@ -97,7 +97,7 @@
     "@babel/cli": "^7.28.6",
     "@babel/core": "^7.29.0",
     "@babel/preset-env": "^7.29.5",
-    "@coreui/internal-links": "^5.1.0",
+    "@ui/internal-links": "^5.1.0",
     "@docsearch/css": "^4.6.3",
     "@docsearch/js": "^4.6.3",
     "@eslint/markdown": "^7.5.1",
@@ -162,12 +162,12 @@
   ],
   "jspm": {
     "registry": "npm",
-    "main": "js/coreui",
+    "main": "js/ui",
     "directories": {
       "lib": "dist"
     },
     "shim": {
-      "js/coreui": {
+      "js/ui": {
         "deps": [
           "@popperjs/core"
         ]

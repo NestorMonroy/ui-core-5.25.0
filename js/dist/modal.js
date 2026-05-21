@@ -1,7 +1,7 @@
 /*!
   * UI modal.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('./base-component.js'), require('./dom/event-handler.js'), require('./dom/selector-engine.js'), require('./util/backdrop.js'), require('./util/component-functions.js'), require('./util/focustrap.js'), require('./util/index.js'), require('./util/scrollbar.js')) :
@@ -12,7 +12,7 @@
   /**
    * --------------------------------------------------------------------------
    * UI modal.js
-   * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+   * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
    *
    * This component is a modified version of the Bootstrap's modal.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -25,7 +25,7 @@
    */
 
   const NAME = 'modal';
-  const DATA_KEY = 'coreui.modal';
+  const DATA_KEY = 'ui.modal';
   const EVENT_KEY = `.${DATA_KEY}`;
   const DATA_API_KEY = '.data-api';
   const ESCAPE_KEY = 'Escape';
@@ -46,7 +46,7 @@
   const OPEN_SELECTOR = '.modal.show';
   const SELECTOR_DIALOG = '.modal-dialog';
   const SELECTOR_MODAL_BODY = '.modal-body';
-  const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle="modal"]';
+  const SELECTOR_DATA_TOGGLE = '[data-ui-toggle="modal"]';
   const Default = {
     backdrop: true,
     focus: true,

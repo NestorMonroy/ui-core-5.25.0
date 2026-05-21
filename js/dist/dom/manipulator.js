@@ -1,7 +1,7 @@
 /*!
   * UI manipulator.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
@@ -12,7 +12,7 @@
   /**
    * --------------------------------------------------------------------------
    * UI dom/manipulator.js
-   * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+   * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
    *
    * This is a modified version of the Bootstrap's dom/manipulator.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -46,26 +46,26 @@
   }
   const Manipulator = {
     setDataAttribute(element, key, value) {
-      element.setAttribute(`data-coreui-${normalizeDataKey(key)}`, value);
+      element.setAttribute(`data-ui-${normalizeDataKey(key)}`, value);
     },
     removeDataAttribute(element, key) {
-      element.removeAttribute(`data-coreui-${normalizeDataKey(key)}`);
+      element.removeAttribute(`data-ui-${normalizeDataKey(key)}`);
     },
     getDataAttributes(element) {
       if (!element) {
         return {};
       }
       const attributes = {};
-      const coreuiKeys = Object.keys(element.dataset).filter(key => key.startsWith('coreui') && !key.startsWith('coreuiConfig'));
-      for (const key of coreuiKeys) {
-        let pureKey = key.replace(/^coreui/, '');
+      const uiKeys = Object.keys(element.dataset).filter(key => key.startsWith('ui') && !key.startsWith('uiConfig'));
+      for (const key of uiKeys) {
+        let pureKey = key.replace(/^ui/, '');
         pureKey = pureKey.charAt(0).toLowerCase() + pureKey.slice(1);
         attributes[pureKey] = normalizeData(element.dataset[key]);
       }
       return attributes;
     },
     getDataAttribute(element, key) {
-      return normalizeData(element.getAttribute(`data-coreui-${normalizeDataKey(key)}`));
+      return normalizeData(element.getAttribute(`data-ui-${normalizeDataKey(key)}`));
     }
   };
 

@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
  * UI tooltip.js
- * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+ * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
  *
  * This component is a modified version of the Bootstrap's tooltip.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -32,7 +32,7 @@ const CLASS_NAME_SHOW = 'show'
 const SELECTOR_TOOLTIP_INNER = '.tooltip-inner'
 const SELECTOR_MODAL = `.${CLASS_NAME_MODAL}`
 
-const EVENT_MODAL_HIDE = 'hide.coreui.modal'
+const EVENT_MODAL_HIDE = 'hide.ui.modal'
 
 const TRIGGER_HOVER = 'hover'
 const TRIGGER_FOCUS = 'focus'
@@ -108,7 +108,7 @@ const DefaultType = {
 class Tooltip extends BaseComponent {
   constructor(element, config) {
     if (typeof Popper === 'undefined') {
-      throw new TypeError('CoreUI\'s dropdowns require Popper (https://popper.js.org/docs/v2/)')
+      throw new TypeError('ui\'s dropdowns require Popper (https://popper.js.org/docs/v2/)')
     }
 
     super(element, config)
@@ -176,8 +176,8 @@ class Tooltip extends BaseComponent {
 
     EventHandler.off(this._element.closest(SELECTOR_MODAL), EVENT_MODAL_HIDE, this._hideModalHandler)
 
-    if (this._element.getAttribute('data-coreui-original-title')) {
-      this._element.setAttribute('title', this._element.getAttribute('data-coreui-original-title'))
+    if (this._element.getAttribute('data-ui-original-title')) {
+      this._element.setAttribute('title', this._element.getAttribute('data-ui-original-title'))
     }
 
     this._disposePopper()
@@ -357,7 +357,7 @@ class Tooltip extends BaseComponent {
   }
 
   _getTitle() {
-    return this._resolvePossibleFunction(this._config.title) || this._element.getAttribute('data-coreui-original-title')
+    return this._resolvePossibleFunction(this._config.title) || this._element.getAttribute('data-ui-original-title')
   }
 
   // Private
@@ -497,7 +497,7 @@ class Tooltip extends BaseComponent {
       this._element.setAttribute('aria-label', title)
     }
 
-    this._element.setAttribute('data-coreui-original-title', title) // DO NOT USE IT. Is only for backwards compatibility
+    this._element.setAttribute('data-ui-original-title', title) // DO NOT USE IT. Is only for backwards compatibility
     this._element.removeAttribute('title')
   }
 

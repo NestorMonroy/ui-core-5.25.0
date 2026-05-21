@@ -1,7 +1,7 @@
 /*!
   * UI scrollspy.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('./base-component.js'), require('./dom/event-handler.js'), require('./dom/selector-engine.js'), require('./util/index.js')) :
@@ -12,7 +12,7 @@
   /**
    * --------------------------------------------------------------------------
    * UI scrollspy.js
-   * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+   * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
    *
    * This component is a modified version of the Bootstrap's scrollspy.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -25,7 +25,7 @@
    */
 
   const NAME = 'scrollspy';
-  const DATA_KEY = 'coreui.scrollspy';
+  const DATA_KEY = 'ui.scrollspy';
   const EVENT_KEY = `.${DATA_KEY}`;
   const DATA_API_KEY = '.data-api';
   const EVENT_ACTIVATE = `activate${EVENT_KEY}`;
@@ -33,7 +33,7 @@
   const EVENT_LOAD_DATA_API = `load${EVENT_KEY}${DATA_API_KEY}`;
   const CLASS_NAME_DROPDOWN_ITEM = 'dropdown-item';
   const CLASS_NAME_ACTIVE = 'active';
-  const SELECTOR_DATA_SPY = '[data-coreui-spy="scroll"]';
+  const SELECTOR_DATA_SPY = '[data-ui-spy="scroll"]';
   const SELECTOR_TARGET_LINKS = '[href]';
   const SELECTOR_NAV_LIST_GROUP = '.nav, .list-group';
   const SELECTOR_NAV_LINKS = '.nav-link';

@@ -24,7 +24,7 @@ import FocusTrap from './util/focustrap.js'
  */
 
 const NAME = 'date-range-picker'
-const DATA_KEY = 'coreui.date-range-picker'
+const DATA_KEY = 'ui.date-range-picker'
 const EVENT_KEY = `.${DATA_KEY}`
 const DATA_API_KEY = '.data-api'
 const DISALLOWED_ATTRIBUTES = new Set(['sanitize', 'allowList', 'sanitizeFn'])
@@ -73,7 +73,7 @@ const CLASS_NAME_TIME_PICKERS = 'date-picker-timepickers'
 const CLASS_NAME_WAS_VALIDATED = 'was-validated'
 
 const SELECTOR_CALENDAR = '.calendars'
-const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle="date-range-picker"]:not(.disabled):not(:disabled)'
+const SELECTOR_DATA_TOGGLE = '[data-ui-toggle="date-range-picker"]:not(.disabled):not(:disabled)'
 const SELECTOR_DATA_TOGGLE_SHOWN = `${SELECTOR_DATA_TOGGLE}.${CLASS_NAME_SHOW}`
 const SELECTOR_INPUT = '.date-picker-input'
 const SELECTOR_WAS_VALIDATED = 'form.was-validated'
@@ -506,7 +506,7 @@ class DateRangePicker extends BaseComponent {
 
   _addCalendarEventListeners() {
     for (const calendar of SelectorEngine.find(SELECTOR_CALENDAR, this._menu)) {
-      EventHandler.on(calendar, 'startDateChange.coreui.calendar', event => {
+      EventHandler.on(calendar, 'startDateChange.ui.calendar', event => {
         this._changeStartDate(event.date)
 
         if (!this._config.range && (!this._config.footer && !this._config.timepicker)) {
@@ -514,7 +514,7 @@ class DateRangePicker extends BaseComponent {
         }
       })
 
-      EventHandler.on(calendar, 'endDateChange.coreui.calendar', event => {
+      EventHandler.on(calendar, 'endDateChange.ui.calendar', event => {
         this._changeEndDate(event.date)
 
         if (this._startDate && (!this._config.footer && !this._config.timepicker)) {
@@ -523,7 +523,7 @@ class DateRangePicker extends BaseComponent {
       })
 
       if (this._config.previewDateOnHover && !this._config.disabled) {
-        EventHandler.on(calendar, 'cellHover.coreui.calendar', event => {
+        EventHandler.on(calendar, 'cellHover.ui.calendar', event => {
           if (this._selectEndDate) {
             const previewValue = event.date ? this._setInputValue(event.date) : this._setInputValue(this._endDate)
             this._updatePreviewInputVisibility(this._endPreviewInput, event.date ? previewValue : '')
@@ -536,7 +536,7 @@ class DateRangePicker extends BaseComponent {
         })
       }
 
-      EventHandler.on(calendar, 'selectEndChange.coreui.calendar', event => {
+      EventHandler.on(calendar, 'selectEndChange.ui.calendar', event => {
         this._selectEndDate = event.value
       })
     }
@@ -812,11 +812,11 @@ class DateRangePicker extends BaseComponent {
 
     this._calendar = new Calendar(calendarEl, this._getCalendarConfig())
 
-    EventHandler.on(calendarEl, 'calendarDateChange.coreui.calendar', event => {
+    EventHandler.on(calendarEl, 'calendarDateChange.ui.calendar', event => {
       this._calendarDate = event.date
     })
 
-    EventHandler.on(calendarEl, 'calendarMouseleave.coreui.calendar', () => {
+    EventHandler.on(calendarEl, 'calendarMouseleave.ui.calendar', () => {
       this._updatePreviewInputVisibility(this._startPreviewInput, '')
       this._updatePreviewInputVisibility(this._endPreviewInput, '')
     })
@@ -829,7 +829,7 @@ class DateRangePicker extends BaseComponent {
 
         this._timepickers.append(timePickerStartEl)
 
-        EventHandler.on(timePickerStartEl, 'timeChange.coreui.time-picker', event => {
+        EventHandler.on(timePickerStartEl, 'timeChange.ui.time-picker', event => {
           this._changeStartDate(event.date, true)
           this._calendar.update(this._getCalendarConfig())
         })
@@ -840,7 +840,7 @@ class DateRangePicker extends BaseComponent {
 
         this._timepickers.append(timePickerEndEl)
 
-        EventHandler.on(timePickerEndEl, 'timeChange.coreui.time-picker', event => {
+        EventHandler.on(timePickerEndEl, 'timeChange.ui.time-picker', event => {
           this._changeEndDate(event.date, true)
           this._calendar.update(this._getCalendarConfig())
         })
@@ -859,7 +859,7 @@ class DateRangePicker extends BaseComponent {
 
           this._timepickers.append(timePickerEl)
 
-          EventHandler.on(timePickerEl, 'timeChange.coreui.time-picker', event => {
+          EventHandler.on(timePickerEl, 'timeChange.ui.time-picker', event => {
             if (index === 0) {
               this._changeStartDate(event.date, true)
             } else {
@@ -977,7 +977,7 @@ class DateRangePicker extends BaseComponent {
 
   _createPopper() {
     if (typeof Popper === 'undefined') {
-      throw new TypeError('CoreUI\'s date picker require Popper (https://popper.js.org)')
+      throw new TypeError('ui\'s date picker require Popper (https://popper.js.org)')
     }
 
     const popperConfig = {

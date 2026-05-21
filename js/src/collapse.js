@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
  * UI collapse.js
- * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+ * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
  *
  * This component is a modified version of the Bootstrap's collapse.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -22,7 +22,7 @@ import {
  */
 
 const NAME = 'collapse'
-const DATA_KEY = 'coreui.collapse'
+const DATA_KEY = 'ui.collapse'
 const EVENT_KEY = `.${DATA_KEY}`
 const DATA_API_KEY = '.data-api'
 
@@ -43,7 +43,7 @@ const WIDTH = 'width'
 const HEIGHT = 'height'
 
 const SELECTOR_ACTIVES = '.collapse.show, .collapse.collapsing'
-const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle="collapse"]'
+const SELECTOR_DATA_TOGGLE = '[data-ui-toggle="collapse"]'
 
 const Default = {
   parent: null,

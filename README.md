@@ -1,10 +1,10 @@
 <p align="center">
   <a href="/">
-    <img src="/images/brand/coreui-signet.svg" alt="UI logo" width="200">
+    <img src="/images/brand/ui-signet.svg" alt="UI logo" width="200">
   </a>
 </p>
 
-<h3 align="center">CoreUI</h3>
+<h3 align="center">ui</h3>
 
 <p align="center">
   An advanced UI library based on Bootstrap 5 – UI extends Bootstrap with PRO components, and ready-to-use admin templates for React, Angular, Vue, and more.
@@ -12,9 +12,9 @@
   <a href="/bootstrap/docs/"><strong>Explore UI docs »</strong></a>
   <br>
   <br>
-  <a href="https://github.com/coreui/coreui/issues/new?template=bug_report.md">Report bug</a>
+  <a href="https://github.com/ui/ui/issues/new?template=bug_report.md">Report bug</a>
   ·
-  <a href="https://github.com/coreui/coreui/issues/new?template=feature_request.md">Request feature</a>
+  <a href="https://github.com/ui/ui/issues/new?template=feature_request.md">Request feature</a>
   ·
   <a href="/blog/">Blog</a>
 </p>
@@ -50,18 +50,18 @@ Whether you're starting a new project or migrating from Bootstrap, UI gives you 
 - [Versioning](#versioning)
 - [Creators](#creators)
 - [Thanks](#thanks)
-- [Support UI Development](#support-coreui-development)
+- [Support UI Development](#support-ui-development)
 - [Copyright and license](#copyright-and-license)
 
 ## Quick start
 
 Several quick start options are available:
 
-- [Download the latest release](https://github.com/coreui/coreui-pro/archive/v5.25.0.zip) (Enterprise subscription required)
-- Clone the repo: `git clone https://github.com/coreui/coreui-pro.git` (Enterprise subscription required)
-- Install with [npm](https://www.npmjs.com/): `npm install @coreui/coreui-pro`
-- Install with [yarn](https://yarnpkg.com/): `yarn add @coreui/coreui-pro`
-- Install with [Composer](https://getcomposer.org/): `composer require coreui/coreui-pro:5.25.0`
+- [Download the latest release](https://github.com/ui/ui-pro/archive/v5.25.0.zip) (Enterprise subscription required)
+- Clone the repo: `git clone https://github.com/ui/ui-pro.git` (Enterprise subscription required)
+- Install with [npm](https://www.npmjs.com/): `npm install @ui/ui-pro`
+- Install with [yarn](https://yarnpkg.com/): `yarn add @ui/ui-pro`
+- Install with [Composer](https://getcomposer.org/): `composer require ui/ui-pro:5.25.0`
 
 Read the [Getting started page](/docs/getting-started/introduction/) for information on the framework contents, templates and examples, and more.
 
@@ -123,14 +123,14 @@ Read the [Getting started page](/docs/getting-started/introduction/) for informa
 
 ## Status
 
-[![Build Status](https://github.com/coreui/coreui/workflows/JS%20Tests/badge.svg?branch=main)](https://github.com/coreui/coreui/actions?query=workflow%3AJS+Tests+branch%3Amain)
-[![npm version](https://img.shields.io/npm/v/@coreui/coreui)](https://www.npmjs.com/package/@coreui/coreui)
-[![Packagist Prerelease](https://img.shields.io/packagist/vpre/coreui/coreui)](https://packagist.org/packages/coreui/coreui)
-[![Coverage Status](https://img.shields.io/coveralls/github/coreui/coreui/main)](https://coveralls.io/github/coreui/coreui?branch=main)
-[![CSS gzip size](https://img.badgesize.io/coreui/coreui/main/dist/css/coreui.min.css?compression=gzip&label=CSS%20gzip%20size)](https://github.com/coreui/coreui/blob/main/dist/css/coreui.min.css)
-[![CSS Brotli size](https://img.badgesize.io/coreui/coreui/main/dist/css/coreui.min.css?compression=brotli&label=CSS%20Brotli%20size)](https://github.com/coreui/coreui/blob/main/dist/css/coreui.min.css)
-[![JS gzip size](https://img.badgesize.io/coreui/coreui/main/dist/js/coreui.min.js?compression=gzip&label=JS%20gzip%20size)](https://github.com/coreui/coreui/blob/main/dist/js/coreui.min.js)
-[![JS Brotli size](https://img.badgesize.io/coreui/coreui/main/dist/js/coreui.min.js?compression=brotli&label=JS%20Brotli%20size)](https://github.com/coreui/coreui/blob/main/dist/js/coreui.min.js)
+[![Build Status](https://github.com/ui/ui/workflows/JS%20Tests/badge.svg?branch=main)](https://github.com/ui/ui/actions?query=workflow%3AJS+Tests+branch%3Amain)
+[![npm version](https://img.shields.io/npm/v/@ui/ui)](https://www.npmjs.com/package/@ui/ui)
+[![Packagist Prerelease](https://img.shields.io/packagist/vpre/ui/ui)](https://packagist.org/packages/ui/ui)
+[![Coverage Status](https://img.shields.io/coveralls/github/ui/ui/main)](https://coveralls.io/github/ui/ui?branch=main)
+[![CSS gzip size](https://img.badgesize.io/ui/ui/main/dist/css/ui.min.css?compression=gzip&label=CSS%20gzip%20size)](https://github.com/ui/ui/blob/main/dist/css/ui.min.css)
+[![CSS Brotli size](https://img.badgesize.io/ui/ui/main/dist/css/ui.min.css?compression=brotli&label=CSS%20Brotli%20size)](https://github.com/ui/ui/blob/main/dist/css/ui.min.css)
+[![JS gzip size](https://img.badgesize.io/ui/ui/main/dist/js/ui.min.js?compression=gzip&label=JS%20gzip%20size)](https://github.com/ui/ui/blob/main/dist/js/ui.min.js)
+[![JS Brotli size](https://img.badgesize.io/ui/ui/main/dist/js/ui.min.js?compression=brotli&label=JS%20Brotli%20size)](https://github.com/ui/ui/blob/main/dist/js/ui.min.js)
 
 
 ## What's included
@@ -138,71 +138,71 @@ Read the [Getting started page](/docs/getting-started/introduction/) for informa
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
 
 ```text
-coreui/
+ui/
 ├── css/
-│   ├── coreui-grid.css
-│   ├── coreui-grid.css.map
-│   ├── coreui-grid.min.css
-│   ├── coreui-grid.min.css.map
-│   ├── coreui-grid.rtl.css
-│   ├── coreui-grid.rtl.css.map
-│   ├── coreui-grid.rtl.min.css
-│   ├── coreui-grid.rtl.min.css.map
-│   ├── coreui-reboot.css
-│   ├── coreui-reboot.css.map
-│   ├── coreui-reboot.min.css
-│   ├── coreui-reboot.min.css.map
-│   ├── coreui-reboot.rtl.css
-│   ├── coreui-reboot.rtl.css.map
-│   ├── coreui-reboot.rtl.min.css
-│   ├── coreui-reboot.rtl.min.css.map
-│   ├── coreui-utilities.css
-│   ├── coreui-utilities.css.map
-│   ├── coreui-utilities.min.css
-│   ├── coreui-utilities.min.css.map
-│   ├── coreui-utilities.rtl.css
-│   ├── coreui-utilities.rtl.css.map
-│   ├── coreui-utilities.rtl.min.css
-│   ├── coreui-utilities.rtl.min.css.map
-│   ├── coreui.css
-│   ├── coreui.css.map
-│   ├── coreui.min.css
-│   ├── coreui.min.css.map
-│   ├── coreui.rtl.css
-│   ├── coreui.rtl.css.map
-│   ├── coreui.rtl.min.css
-│   └── coreui.rtl.min.css.map
+│   ├── ui-grid.css
+│   ├── ui-grid.css.map
+│   ├── ui-grid.min.css
+│   ├── ui-grid.min.css.map
+│   ├── ui-grid.rtl.css
+│   ├── ui-grid.rtl.css.map
+│   ├── ui-grid.rtl.min.css
+│   ├── ui-grid.rtl.min.css.map
+│   ├── ui-reboot.css
+│   ├── ui-reboot.css.map
+│   ├── ui-reboot.min.css
+│   ├── ui-reboot.min.css.map
+│   ├── ui-reboot.rtl.css
+│   ├── ui-reboot.rtl.css.map
+│   ├── ui-reboot.rtl.min.css
+│   ├── ui-reboot.rtl.min.css.map
+│   ├── ui-utilities.css
+│   ├── ui-utilities.css.map
+│   ├── ui-utilities.min.css
+│   ├── ui-utilities.min.css.map
+│   ├── ui-utilities.rtl.css
+│   ├── ui-utilities.rtl.css.map
+│   ├── ui-utilities.rtl.min.css
+│   ├── ui-utilities.rtl.min.css.map
+│   ├── ui.css
+│   ├── ui.css.map
+│   ├── ui.min.css
+│   ├── ui.min.css.map
+│   ├── ui.rtl.css
+│   ├── ui.rtl.css.map
+│   ├── ui.rtl.min.css
+│   └── ui.rtl.min.css.map
 └── js/
-    ├── coreui.bundle.js
-    ├── coreui.bundle.js.map
-    ├── coreui.bundle.min.js
-    ├── coreui.bundle.min.js.map
-    ├── coreui.esm.js
-    ├── coreui.esm.js.map
-    ├── coreui.esm.min.js
-    ├── coreui.esm.min.js.map
-    ├── coreui.js
-    ├── coreui.js.map
-    ├── coreui.min.js
-    └── coreui.min.js.map
+    ├── ui.bundle.js
+    ├── ui.bundle.js.map
+    ├── ui.bundle.min.js
+    ├── ui.bundle.min.js.map
+    ├── ui.esm.js
+    ├── ui.esm.js.map
+    ├── ui.esm.min.js
+    ├── ui.esm.min.js.map
+    ├── ui.js
+    ├── ui.js.map
+    ├── ui.min.js
+    └── ui.min.js.map
 ```
 
-We provide compiled CSS and JS (`coreui.*`), as well as compiled and minified CSS and JS (`coreui.min.*`). [source maps](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) (`coreui.*.map`) are available for use with certain browsers' developer tools. Bundled JS files (`coreui.bundle.js` and minified `coreui.bundle.min.js`) include [Popper](https://popper.js.org/).
+We provide compiled CSS and JS (`ui.*`), as well as compiled and minified CSS and JS (`ui.min.*`). [source maps](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) (`ui.*.map`) are available for use with certain browsers' developer tools. Bundled JS files (`ui.bundle.js` and minified `ui.bundle.min.js`) include [Popper](https://popper.js.org/).
 
 
 ## Bugs and feature requests
 
-Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/coreui/coreui/blob/main/.github/CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/coreui/coreui/issues/new).
+Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/ui/ui/blob/main/.github/CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/ui/ui/issues/new).
 
 ## Documentation
 
-The documentation for the UI & is hosted at our website [CoreUI](/bootstrap/docs/getting-started/introduction/)
+The documentation for the UI & is hosted at our website [ui](/bootstrap/docs/getting-started/introduction/)
 
 ### Running documentation locally
 
 1. Run `npm install` to install the Node.js dependencies, including Hugo (the site builder).
 2. Run `npm run test` (or a specific npm script) to rebuild distributed CSS and JavaScript files, as well as our docs assets.
-3. From the root `/coreui` directory, run `npm run docs-serve` in the command line.
+3. From the root `/ui` directory, run `npm run docs-serve` in the command line.
 4. Open `http://localhost:9001/` in your browser, and voilà.
 
 Learn more about using Hugo by reading its [documentation](https://gohugo.io/documentation/).
@@ -211,14 +211,14 @@ Learn more about using Hugo by reading its [documentation](https://gohugo.io/doc
 
 UI supports most popular frameworks.
 
-- [UI for Angular](https://github.com/coreui/coreui-angular)
-- [UI for Bootstrap (Vanilla JS)](https://github.com/coreui/coreui)
-- [UI for React](https://github.com/coreui/coreui-react)
-- [UI for Vue](https://github.com/coreui/coreui-vue)
+- [UI for Angular](https://github.com/ui/ui-angular)
+- [UI for Bootstrap (Vanilla JS)](https://github.com/ui/ui)
+- [UI for React](https://github.com/ui/ui-react)
+- [UI for Vue](https://github.com/ui/ui-vue)
 
 ## Templates
 
-Fully featured, out-of-the-box, templates for your application based on CoreUI.
+Fully featured, out-of-the-box, templates for your application based on ui.
 
 - [Angular Admin Templates](/themes-templates/admin-dashboard/angular/)
 - [Bootstrap Admin Templates](/themes-templates/admin-dashboard/bootstrap/)
@@ -228,9 +228,9 @@ Fully featured, out-of-the-box, templates for your application based on CoreUI.
 
 ## Contributing
 
-Please read through our [contributing guidelines](https://github.com/coreui/coreui/blob/main/.github/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
+Please read through our [contributing guidelines](https://github.com/ui/ui/blob/main/.github/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
 
-Editor preferences are available in the [editor config](https://github.com/coreui/coreui/blob/main/.editorconfig) for easy use in common text editors. Read more and download plugins at <https://editorconfig.org/>.
+Editor preferences are available in the [editor config](https://github.com/ui/ui/blob/main/.editorconfig) for easy use in common text editors. Read more and download plugins at <https://editorconfig.org/>.
 
 ## Community
 
@@ -244,7 +244,7 @@ Stay up to date on the development of UI and reach out to the community with the
 
 For transparency into our release cycle and in striving to maintain backward compatibility, UI is maintained under [the Semantic Versioning guidelines](http://semver.org/).
 
-See [the Releases section of our project](https://github.com/coreui/coreui/releases) for changelogs for each release version.
+See [the Releases section of our project](https://github.com/ui/ui/releases) for changelogs for each release version.
 
 
 ## Creators
@@ -261,15 +261,15 @@ See [the Releases section of our project](https://github.com/coreui/coreui/relea
 **UI Team**
 
 * <https://twitter.com/core_ui>
-* <https://github.com/coreui>
-* <https://github.com/orgs/coreui/people>
+* <https://github.com/ui>
+* <https://github.com/orgs/ui/people>
 
 ## Thanks
 UI is designed as the extension of [Bootstrap](https://getbootstrap.com). Special thanks for [Bootstrap team](https://getbootstrap.com/docs/5.0/about/team/) and [Bootstrap's contributors](https://github.com/twbs/bootstrap/graphs/contributors).
 
 ## Support UI Development
 
-UI is an MIT-licensed open source project and is completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support development by buying the [UI PRO](/pricing/?framework=bootstrap&src=github-coreui) or by becoming a sponsor via [Open Collective](https://opencollective.com/coreui/).
+UI is an MIT-licensed open source project and is completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support development by buying the [UI PRO](/pricing/?framework=bootstrap&src=github-ui) or by becoming a sponsor via [Open Collective](https://opencollective.com/ui/).
 
 ## Copyright and license
 

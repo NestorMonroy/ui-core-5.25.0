@@ -1,7 +1,7 @@
 /*!
   * UI chip-input.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('./base-component.js'), require('./chip.js'), require('./dom/event-handler.js'), require('./dom/selector-engine.js'), require('./util/index.js')) :
@@ -25,7 +25,7 @@
    */
 
   const NAME = 'chip-input';
-  const DATA_KEY = 'coreui.chip-input';
+  const DATA_KEY = 'ui.chip-input';
   const EVENT_KEY = `.${DATA_KEY}`;
   const DATA_API_KEY = '.data-api';
   const EVENT_ADD = `add${EVENT_KEY}`;
@@ -33,7 +33,7 @@
   const EVENT_CHANGE = `change${EVENT_KEY}`;
   const EVENT_SELECT = `select${EVENT_KEY}`;
   const EVENT_INPUT = `input${EVENT_KEY}`;
-  const SELECTOR_DATA_CHIP_INPUT = '[data-coreui-chip-input]';
+  const SELECTOR_DATA_CHIP_INPUT = '[data-ui-chip-input]';
   const SELECTOR_CHIP = '.chip';
   const SELECTOR_CHIP_ACTIVE = `${SELECTOR_CHIP}.active`;
   const SELECTOR_CHIP_INPUT_LABEL = '.chip-input-label';
@@ -264,7 +264,7 @@
     _createChip(value) {
       const chip = document.createElement('span');
       chip.className = CLASS_NAME_CHIP;
-      chip.dataset.coreuiChipValue = value;
+      chip.dataset.uiChipValue = value;
       chip.append(document.createTextNode(value));
       this._applyChipClassName(chip, value);
       this._setupChip(chip);
@@ -287,8 +287,8 @@
     }
     _getChipValue(chip) {
       var _clone$textContent;
-      if (chip.dataset.coreuiChipValue) {
-        return chip.dataset.coreuiChipValue;
+      if (chip.dataset.uiChipValue) {
+        return chip.dataset.uiChipValue;
       }
       const clone = chip.cloneNode(true);
       const remove = SelectorEngine.findOne(SELECTOR_CHIP_REMOVE, clone);
@@ -370,18 +370,18 @@
           }
         });
       }
-      EventHandler.on(this._element, 'selected.coreui.chip', SELECTOR_CHIP, () => {
+      EventHandler.on(this._element, 'selected.ui.chip', SELECTOR_CHIP, () => {
         this._emitSelectionChange();
       });
-      EventHandler.on(this._element, 'deselected.coreui.chip', SELECTOR_CHIP, () => {
+      EventHandler.on(this._element, 'deselected.ui.chip', SELECTOR_CHIP, () => {
         this._emitSelectionChange();
       });
-      EventHandler.on(this._element, 'remove.coreui.chip', SELECTOR_CHIP, event => {
+      EventHandler.on(this._element, 'remove.ui.chip', SELECTOR_CHIP, event => {
         if (this._disabled || this._readonly) {
           event.preventDefault();
         }
       });
-      EventHandler.on(this._element, 'removed.coreui.chip', SELECTOR_CHIP, event => {
+      EventHandler.on(this._element, 'removed.ui.chip', SELECTOR_CHIP, event => {
         const chip = event.target.closest(SELECTOR_CHIP);
         if (chip) {
           this._handleChipRemoved(chip);

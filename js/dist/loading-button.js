@@ -1,7 +1,7 @@
 /*!
   * UI loading-button.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('./base-component.js'), require('./dom/data.js'), require('./dom/event-handler.js'), require('./util/index.js')) :
@@ -22,7 +22,7 @@
    */
 
   const NAME = 'loading-button';
-  const DATA_KEY = 'coreui.loading-button';
+  const DATA_KEY = 'ui.loading-button';
   const EVENT_KEY = `.${DATA_KEY}`;
   const DATA_API_KEY = '.data-api';
   const EVENT_START = `start${EVENT_KEY}`;
@@ -31,7 +31,7 @@
   const CLASS_NAME_IS_LOADING = 'is-loading';
   const CLASS_NAME_LOADING_BUTTON = 'btn-loading';
   const CLASS_NAME_LOADING_BUTTON_SPINNER = 'btn-loading-spinner';
-  const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle="loading-button"]';
+  const SELECTOR_DATA_TOGGLE = '[data-ui-toggle="loading-button"]';
   const Default = {
     disabledOnLoading: false,
     spinner: true,

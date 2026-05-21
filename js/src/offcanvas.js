@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
  * UI offcanvas.js
- * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+ * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
  *
  * This component is a modified version of the Bootstrap's offcanvas.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -26,7 +26,7 @@ import ScrollBarHelper from './util/scrollbar.js'
  */
 
 const NAME = 'offcanvas'
-const DATA_KEY = 'coreui.offcanvas'
+const DATA_KEY = 'ui.offcanvas'
 const EVENT_KEY = `.${DATA_KEY}`
 const DATA_API_KEY = '.data-api'
 const EVENT_LOAD_DATA_API = `load${EVENT_KEY}${DATA_API_KEY}`
@@ -47,7 +47,7 @@ const EVENT_RESIZE = `resize${EVENT_KEY}`
 const EVENT_CLICK_DATA_API = `click${EVENT_KEY}${DATA_API_KEY}`
 const EVENT_KEYDOWN_DISMISS = `keydown.dismiss${EVENT_KEY}`
 
-const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle="offcanvas"]'
+const SELECTOR_DATA_TOGGLE = '[data-ui-toggle="offcanvas"]'
 
 const Default = {
   backdrop: true,

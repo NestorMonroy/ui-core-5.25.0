@@ -1,7 +1,7 @@
 /*!
   * UI time-picker.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('@popperjs/core'), require('./base-component.js'), require('./dom/event-handler.js'), require('./dom/manipulator.js'), require('./dom/selector-engine.js'), require('./util/index.js'), require('./util/focustrap.js'), require('./util/time.js')) :
@@ -41,7 +41,7 @@
    */
 
   const NAME = 'time-picker';
-  const DATA_KEY = 'coreui.time-picker';
+  const DATA_KEY = 'ui.time-picker';
   const EVENT_KEY = `.${DATA_KEY}`;
   const DATA_API_KEY = '.data-api';
   const END_KEY = 'End';
@@ -87,7 +87,7 @@
   const CLASS_NAME_SHOW = 'show';
   const CLASS_NAME_TIME_PICKER = 'time-picker';
   const CLASS_NAME_WAS_VALIDATED = 'was-validated';
-  const SELECTOR_DATA_TOGGLE = '[data-coreui-toggle="time-picker"]:not(.disabled):not(:disabled)';
+  const SELECTOR_DATA_TOGGLE = '[data-ui-toggle="time-picker"]:not(.disabled):not(:disabled)';
   const SELECTOR_DATA_TOGGLE_SHOWN = `${SELECTOR_DATA_TOGGLE}.${CLASS_NAME_SHOW}`;
   const SELECTOR_ROLL_CELL = '.time-picker-roll-cell';
   const SELECTOR_ROLL_CELL_FOCUSABLE = '.time-picker-roll-cell[tabindex="0"]';
@@ -422,7 +422,7 @@
           this.hide();
         }
       });
-      EventHandler.on(this._element, 'timeChange.coreui.time-picker', () => {
+      EventHandler.on(this._element, 'timeChange.ui.time-picker', () => {
         if (this._config.variant === 'roll') {
           this._setUpRolls();
         }
@@ -430,7 +430,7 @@
           this._setUpSelects();
         }
       });
-      EventHandler.on(this._element, 'onCancelClick.coreui.picker', () => {
+      EventHandler.on(this._element, 'onCancelClick.ui.picker', () => {
         this.cancel();
       });
       EventHandler.on(this._input, EVENT_INPUT, event => {
@@ -693,7 +693,7 @@
         if (partValue === null) {
           continue;
         }
-        const elements = SelectorEngine.find(`[data-coreui-${part}]`, this._element);
+        const elements = SelectorEngine.find(`[data-ui-${part}]`, this._element);
         const selectedElement = elements.find(element => partValue === Manipulator.getDataAttribute(element, part));
         if (selectedElement) {
           this._selectRollElement(selectedElement, initial);
@@ -745,7 +745,7 @@
     }
     _createPopper() {
       if (typeof Popper__namespace === 'undefined') {
-        throw new TypeError('CoreUI\'s time picker require Popper (https://popper.js.org)');
+        throw new TypeError('ui\'s time picker require Popper (https://popper.js.org)');
       }
       const popperConfig = {
         modifiers: [{

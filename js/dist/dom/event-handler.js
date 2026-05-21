@@ -1,7 +1,7 @@
 /*!
   * UI event-handler.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('../util/index.js')) :
@@ -12,7 +12,7 @@
   /**
    * --------------------------------------------------------------------------
    * UI dom/event-handler.js
-   * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+   * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
    *
    * This is a modified version of the Bootstrap's dom/event-handler.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -144,7 +144,7 @@
     }
   }
   function getTypeEvent(event) {
-    // allow to get the native events from namespaced events ('click.coreui.button' --> 'click')
+    // allow to get the native events from namespaced events ('click.ui.button' --> 'click')
     event = event.replace(stripNameRegex, '');
     return customEvents[event] || event;
   }

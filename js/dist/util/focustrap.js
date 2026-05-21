@@ -1,7 +1,7 @@
 /*!
   * UI focustrap.js v5.25.0 
-  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
-  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+  * Copyright 2026 The UI Team (https://github.com/orgs/ui/people)
+  * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('../dom/event-handler.js'), require('../dom/selector-engine.js'), require('./config.js')) :
@@ -12,7 +12,7 @@
   /**
    * --------------------------------------------------------------------------
    * UI util/focustrap.js
-   * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+   * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
    *
    * This is a modified version of the Bootstrap's util/focustrap.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -25,7 +25,7 @@
    */
 
   const NAME = 'focustrap';
-  const DATA_KEY = 'coreui.focustrap';
+  const DATA_KEY = 'ui.focustrap';
   const EVENT_KEY = `.${DATA_KEY}`;
   const EVENT_FOCUSIN = `focusin${EVENT_KEY}`;
   const EVENT_KEYDOWN_TAB = `keydown.tab${EVENT_KEY}`;

@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
  * UI alert.js
- * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
+ * Licensed under MIT (https://github.com/ui/ui/blob/main/LICENSE)
  *
  * This component is a modified version of the Bootstrap's alert.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -18,7 +18,7 @@ import { defineJQueryPlugin } from './util/index.js'
  */
 
 const NAME = 'alert'
-const DATA_KEY = 'coreui.alert'
+const DATA_KEY = 'ui.alert'
 const EVENT_KEY = `.${DATA_KEY}`
 
 const EVENT_CLOSE = `close${EVENT_KEY}`
