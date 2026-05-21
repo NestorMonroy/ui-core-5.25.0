@@ -1,5 +1,5 @@
 /*!
-  * CoreUI auto-complete.js v5.15.0 (https://coreui.io)
+  * CoreUI auto-complete.js v5.15.0 
   * Copyright 2025 The CoreUI Team (https://github.com/orgs/coreui/people)
   * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
   */
@@ -31,7 +31,7 @@
   /**
    * --------------------------------------------------------------------------
    * auto-complete.js
-   * License (https://coreui.io/pro/license/)
+   * 
    * --------------------------------------------------------------------------
    */
 

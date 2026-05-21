@@ -1,5 +1,5 @@
 /*!
-  * CoreUI input-password.js v5.10.0 (https://coreui.io)
+  * CoreUI input-password.js v5.10.0 
   * Copyright 2025 The CoreUI Team (https://github.com/orgs/coreui/people)
   * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
   */
@@ -12,7 +12,7 @@
   /**
    * --------------------------------------------------------------------------
    * password-input.js
-   * License (https://coreui.io/pro/license/)
+   * 
    * --------------------------------------------------------------------------
    */
 

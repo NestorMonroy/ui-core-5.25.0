@@ -1,5 +1,5 @@
 /*!
-  * CoreUI date-picker.js v5.25.0 (https://coreui.io)
+  * CoreUI date-picker.js v5.25.0 
   * Copyright 2026 The CoreUI Team (https://github.com/orgs/coreui/people)
   * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
   */
@@ -12,7 +12,7 @@
   /**
    * --------------------------------------------------------------------------
    * date-picker.js
-   * License (https://coreui.io/pro/license/)
+   * 
    * --------------------------------------------------------------------------
    */
 

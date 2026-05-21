@@ -1,5 +1,5 @@
 /*!
-  * CoreUI multi-select.js v5.25.0 (https://coreui.io)
+  * CoreUI multi-select.js v5.25.0 
   * Copyright 2026 The CoreUI Team (https://github.com/orgs/coreui/people)
   * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
   */
@@ -31,7 +31,7 @@
   /**
    * --------------------------------------------------------------------------
    * multi-select.js
-   * License (https://coreui.io/pro/license/)
+   * 
    * --------------------------------------------------------------------------
    */
 

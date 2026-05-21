@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://coreui.io/">
-    <img src="https://coreui.io/images/brand/coreui-signet.svg" alt="CoreUI logo" width="200">
+  <a href="/">
+    <img src="/images/brand/coreui-signet.svg" alt="CoreUI logo" width="200">
   </a>
 </p>
 
@@ -9,14 +9,14 @@
 <p align="center">
   An advanced UI library based on Bootstrap 5 – CoreUI extends Bootstrap with PRO components, and ready-to-use admin templates for React, Angular, Vue, and more.
   <br>
-  <a href="https://coreui.io/bootstrap/docs/"><strong>Explore CoreUI docs »</strong></a>
+  <a href="/bootstrap/docs/"><strong>Explore CoreUI docs »</strong></a>
   <br>
   <br>
   <a href="https://github.com/coreui/coreui/issues/new?template=bug_report.md">Report bug</a>
   ·
   <a href="https://github.com/coreui/coreui/issues/new?template=feature_request.md">Request feature</a>
   ·
-  <a href="https://coreui.io/blog/">Blog</a>
+  <a href="/blog/">Blog</a>
 </p>
 
 ## CoreUI vs Bootstrap
@@ -25,7 +25,7 @@ CoreUI is fully compatible with Bootstrap, but it’s more than just a theme or 
 
 **Key differences between CoreUI and Bootstrap:**
 
-* ✅ **Framework-native versions** – CoreUI offers official libraries for [React.js](https://coreui.io/react/), [Vue.js](https://coreui.io/vue/), and [Angular](https://coreui.io/angular/), while Bootstrap depends on third-party community plugins for framework integration.
+* ✅ **Framework-native versions** – CoreUI offers official libraries for [React.js](/react/), [Vue.js](/vue/), and [Angular](/angular/), while Bootstrap depends on third-party community plugins for framework integration.
 * 👨‍💻 **Full-time maintained project** – CoreUI is not a community-only initiative. It’s developed by a dedicated, full-time team focused on long-term evolution and support.
 * 📦 **More built-in components** – CoreUI includes many components not present in Bootstrap by default, such as range sliders, multi-selects, and step-based form wizards.
 * 🛠️ **Sass Modules support today** – CoreUI already supports Sass Modules out of the box, a feature that Bootstrap plans to introduce in version 6.
@@ -63,63 +63,63 @@ Several quick start options are available:
 - Install with [yarn](https://yarnpkg.com/): `yarn add @coreui/coreui-pro`
 - Install with [Composer](https://getcomposer.org/): `composer require coreui/coreui-pro:5.25.0`
 
-Read the [Getting started page](https://coreui.io/docs/getting-started/introduction/) for information on the framework contents, templates and examples, and more.
+Read the [Getting started page](/docs/getting-started/introduction/) for information on the framework contents, templates and examples, and more.
 
 ## Components
 
-- [Bootstrap Accordion](https://coreui.io/bootstrap/docs/components/accordion/)
-- [Bootstrap Alert](https://coreui.io/bootstrap/docs/components/alert/)
-- [Bootstrap Autocomplete](https://coreui.io/bootstrap/docs/forms/autocomplete/) **PRO**
-- [Bootstrap Avatar](https://coreui.io/bootstrap/docs/components/avatar/)
-- [Bootstrap Badge](https://coreui.io/bootstrap/docs/components/badge/)
-- [Bootstrap Breadcrumb](https://coreui.io/bootstrap/docs/components/breadcrumb/)
-- [Bootstrap Button](https://coreui.io/bootstrap/docs/components/button/)
-- [Bootstrap Button Group](https://coreui.io/bootstrap/docs/components/button-group/)
-- [Bootstrap Callout](https://coreui.io/bootstrap/docs/components/callout/)
-- [Bootstrap Card](https://coreui.io/bootstrap/docs/components/card/)
-- [Bootstrap Carousel](https://coreui.io/bootstrap/docs/components/carousel/)
-- [Bootstrap Chip](https://coreui.io/bootstrap/docs/components/chip/)
-- [Bootstrap Chip Input](https://coreui.io/bootstrap/docs/forms/chip-input/)
-- [Bootstrap Checkbox](https://coreui.io/bootstrap/docs/forms/checkbox/)
-- [Bootstrap Close Button](https://coreui.io/bootstrap/docs/components/close-button/)
-- [Bootstrap Calendar](https://coreui.io/bootstrap/docs/components/calendar/) **PRO**
-- [Bootstrap Collapse](https://coreui.io/bootstrap/docs/components/collapse/)
-- [Bootstrap Date Picker](https://coreui.io/bootstrap/docs/forms/date-picker/) **PRO**
-- [Bootstrap Date Range Picker](https://coreui.io/bootstrap/docs/forms/date-range-picker/) **PRO**
-- [Bootstrap Dropdown](https://coreui.io/bootstrap/docs/components/dropdown/)
-- [Bootstrap Floating Labels](https://coreui.io/bootstrap/docs/forms/floating-labels/)
-- [Bootstrap Footer](https://coreui.io/bootstrap/docs/components/footer/)
-- [Bootstrap Header](https://coreui.io/bootstrap/docs/components/header/)
-- [Bootstrap Image](https://coreui.io/bootstrap/docs/components/image/)
-- [Bootstrap Input](https://coreui.io/bootstrap/docs/forms/input/)
-- [Bootstrap Input Group](https://coreui.io/bootstrap/docs/forms/input-group/)
-- [Bootstrap List Group](https://coreui.io/bootstrap/docs/components/list-group/)
-- [Bootstrap Loading Button](https://coreui.io/bootstrap/docs/components/loading-button/) **PRO**
-- [Bootstrap Modal](https://coreui.io/bootstrap/docs/components/modal/)
-- [Bootstrap Multi Select](https://coreui.io/bootstrap/docs/forms/multi-select/) **PRO**
-- [Bootstrap Navs & Tabs](https://coreui.io/bootstrap/docs/components/navs-tabs/)
-- [Bootstrap Navbar](https://coreui.io/bootstrap/docs/components/navbar/)
-- [Bootstrap Offcanvas](https://coreui.io/bootstrap/docs/components/offcanvas/)
-- [Bootstrap Pagination](https://coreui.io/bootstrap/docs/components/pagination/)
-- [Bootstrap Password Input](https://coreui.io/bootstrap/docs/forms/password-input/) **PRO**
-- [Bootstrap Placeholder](https://coreui.io/bootstrap/docs/components/placeholder/)
-- [Bootstrap Popover](https://coreui.io/bootstrap/docs/components/popover/)
-- [Bootstrap Progress](https://coreui.io/bootstrap/docs/components/progress/)
-- [Bootstrap Radio](https://coreui.io/bootstrap/docs/forms/radio/)
-- [Bootstrap Range](https://coreui.io/bootstrap/docs/forms/range/)
-- [Bootstrap Range Slider](https://coreui.io/bootstrap/docs/forms/range-slider/) **PRO**
-- [Bootstrap Rating](https://coreui.io/bootstrap/docs/forms/rating/) **PRO**
-- [Bootstrap Select](https://coreui.io/bootstrap/docs/forms/select/)
-- [Bootstrap Sidebar](https://coreui.io/bootstrap/docs/components/sidebar/)
-- [Bootstrap Search Button](https://coreui.io/bootstrap/docs/components/search-button/)
-- [Bootstrap Spinner](https://coreui.io/bootstrap/docs/components/spinner/)
-- [Bootstrap Stepper](https://coreui.io/bootstrap/docs/forms/stepper/) **PRO**
-- [Bootstrap Switch](https://coreui.io/bootstrap/docs/forms/switch/)
-- [Bootstrap Table](https://coreui.io/bootstrap/docs/content/tables/)
-- [Bootstrap Textarea](https://coreui.io/bootstrap/docs/forms/textarea/)
-- [Bootstrap Time Picker](https://coreui.io/bootstrap/docs/forms/time-picker/) **PRO**
-- [Bootstrap Toast](https://coreui.io/bootstrap/docs/components/toast/)
-- [Bootstrap Tooltip](https://coreui.io/bootstrap/docs/components/tooltip/)
+- [Bootstrap Accordion](/bootstrap/docs/components/accordion/)
+- [Bootstrap Alert](/bootstrap/docs/components/alert/)
+- [Bootstrap Autocomplete](/bootstrap/docs/forms/autocomplete/) **PRO**
+- [Bootstrap Avatar](/bootstrap/docs/components/avatar/)
+- [Bootstrap Badge](/bootstrap/docs/components/badge/)
+- [Bootstrap Breadcrumb](/bootstrap/docs/components/breadcrumb/)
+- [Bootstrap Button](/bootstrap/docs/components/button/)
+- [Bootstrap Button Group](/bootstrap/docs/components/button-group/)
+- [Bootstrap Callout](/bootstrap/docs/components/callout/)
+- [Bootstrap Card](/bootstrap/docs/components/card/)
+- [Bootstrap Carousel](/bootstrap/docs/components/carousel/)
+- [Bootstrap Chip](/bootstrap/docs/components/chip/)
+- [Bootstrap Chip Input](/bootstrap/docs/forms/chip-input/)
+- [Bootstrap Checkbox](/bootstrap/docs/forms/checkbox/)
+- [Bootstrap Close Button](/bootstrap/docs/components/close-button/)
+- [Bootstrap Calendar](/bootstrap/docs/components/calendar/) **PRO**
+- [Bootstrap Collapse](/bootstrap/docs/components/collapse/)
+- [Bootstrap Date Picker](/bootstrap/docs/forms/date-picker/) **PRO**
+- [Bootstrap Date Range Picker](/bootstrap/docs/forms/date-range-picker/) **PRO**
+- [Bootstrap Dropdown](/bootstrap/docs/components/dropdown/)
+- [Bootstrap Floating Labels](/bootstrap/docs/forms/floating-labels/)
+- [Bootstrap Footer](/bootstrap/docs/components/footer/)
+- [Bootstrap Header](/bootstrap/docs/components/header/)
+- [Bootstrap Image](/bootstrap/docs/components/image/)
+- [Bootstrap Input](/bootstrap/docs/forms/input/)
+- [Bootstrap Input Group](/bootstrap/docs/forms/input-group/)
+- [Bootstrap List Group](/bootstrap/docs/components/list-group/)
+- [Bootstrap Loading Button](/bootstrap/docs/components/loading-button/) **PRO**
+- [Bootstrap Modal](/bootstrap/docs/components/modal/)
+- [Bootstrap Multi Select](/bootstrap/docs/forms/multi-select/) **PRO**
+- [Bootstrap Navs & Tabs](/bootstrap/docs/components/navs-tabs/)
+- [Bootstrap Navbar](/bootstrap/docs/components/navbar/)
+- [Bootstrap Offcanvas](/bootstrap/docs/components/offcanvas/)
+- [Bootstrap Pagination](/bootstrap/docs/components/pagination/)
+- [Bootstrap Password Input](/bootstrap/docs/forms/password-input/) **PRO**
+- [Bootstrap Placeholder](/bootstrap/docs/components/placeholder/)
+- [Bootstrap Popover](/bootstrap/docs/components/popover/)
+- [Bootstrap Progress](/bootstrap/docs/components/progress/)
+- [Bootstrap Radio](/bootstrap/docs/forms/radio/)
+- [Bootstrap Range](/bootstrap/docs/forms/range/)
+- [Bootstrap Range Slider](/bootstrap/docs/forms/range-slider/) **PRO**
+- [Bootstrap Rating](/bootstrap/docs/forms/rating/) **PRO**
+- [Bootstrap Select](/bootstrap/docs/forms/select/)
+- [Bootstrap Sidebar](/bootstrap/docs/components/sidebar/)
+- [Bootstrap Search Button](/bootstrap/docs/components/search-button/)
+- [Bootstrap Spinner](/bootstrap/docs/components/spinner/)
+- [Bootstrap Stepper](/bootstrap/docs/forms/stepper/) **PRO**
+- [Bootstrap Switch](/bootstrap/docs/forms/switch/)
+- [Bootstrap Table](/bootstrap/docs/content/tables/)
+- [Bootstrap Textarea](/bootstrap/docs/forms/textarea/)
+- [Bootstrap Time Picker](/bootstrap/docs/forms/time-picker/) **PRO**
+- [Bootstrap Toast](/bootstrap/docs/components/toast/)
+- [Bootstrap Tooltip](/bootstrap/docs/components/tooltip/)
 
 ## Status
 
@@ -196,7 +196,7 @@ Have a bug or a feature request? Please first read the [issue guidelines](https:
 
 ## Documentation
 
-The documentation for the CoreUI & is hosted at our website [CoreUI](https://coreui.io/bootstrap/docs/getting-started/introduction/)
+The documentation for the CoreUI & is hosted at our website [CoreUI](/bootstrap/docs/getting-started/introduction/)
 
 ### Running documentation locally
 
@@ -220,11 +220,11 @@ CoreUI supports most popular frameworks.
 
 Fully featured, out-of-the-box, templates for your application based on CoreUI.
 
-- [Angular Admin Templates](https://coreui.io/themes-templates/admin-dashboard/angular/)
-- [Bootstrap Admin Templates](https://coreui.io/themes-templates/admin-dashboard/bootstrap/)
-- [Next.js Admin Templates](https://coreui.io/themes-templates/admin-dashboard/next-js/)
-- [React Admin Templates](https://coreui.io/themes-templates/admin-dashboard/react/)
-- [Vue Admin Templates](https://coreui.io/themes-templates/admin-dashboard/vue/)
+- [Angular Admin Templates](/themes-templates/admin-dashboard/angular/)
+- [Bootstrap Admin Templates](/themes-templates/admin-dashboard/bootstrap/)
+- [Next.js Admin Templates](/themes-templates/admin-dashboard/next-js/)
+- [React Admin Templates](/themes-templates/admin-dashboard/react/)
+- [Vue Admin Templates](/themes-templates/admin-dashboard/vue/)
 
 ## Contributing
 
@@ -236,7 +236,7 @@ Editor preferences are available in the [editor config](https://github.com/coreu
 
 Stay up to date on the development of CoreUI and reach out to the community with these helpful resources.
 
-- Read and subscribe to [The Official CoreUI Blog](https://coreui.io/blog).
+- Read and subscribe to [The Official CoreUI Blog](/blog).
 - Follow [@core_ui on Twitter](https://x.com/core_ui).
 - Discuss, ask questions, and more on [the community Discord](https://discord.gg/pQRWe5XdGm).
 
@@ -269,7 +269,7 @@ CoreUI is designed as the extension of [Bootstrap](https://getbootstrap.com). Sp
 
 ## Support CoreUI Development
 
-CoreUI is an MIT-licensed open source project and is completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support development by buying the [CoreUI PRO](https://coreui.io/pricing/?framework=bootstrap&src=github-coreui) or by becoming a sponsor via [Open Collective](https://opencollective.com/coreui/).
+CoreUI is an MIT-licensed open source project and is completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support development by buying the [CoreUI PRO](/pricing/?framework=bootstrap&src=github-coreui) or by becoming a sponsor via [Open Collective](https://opencollective.com/coreui/).
 
 ## Copyright and license
 
