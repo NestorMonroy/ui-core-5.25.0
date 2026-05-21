@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------
- * CoreUI util/template-factory.js
+ * UI util/template-factory.js
  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
  *
  * This is a modified version of the Bootstrap's util/template-factory.js

@@ -1,6 +1,6 @@
 /*!
-  * CoreUI template-factory.js v5.25.0 
-  * Copyright 2026 The CoreUI Team (https://github.com/orgs/coreui/people)
+  * UI template-factory.js v5.25.0 
+  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
   * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
   */
 (function (global, factory) {
@@ -11,7 +11,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * CoreUI util/template-factory.js
+   * UI util/template-factory.js
    * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
    *
    * This is a modified version of the Bootstrap's util/template-factory.js

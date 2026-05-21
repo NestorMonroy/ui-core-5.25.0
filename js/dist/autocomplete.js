@@ -1,6 +1,6 @@
 /*!
-  * CoreUI autocomplete.js v5.25.0 
-  * Copyright 2026 The CoreUI Team (https://github.com/orgs/coreui/people)
+  * UI autocomplete.js v5.25.0 
+  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
   * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
   */
 (function (global, factory) {

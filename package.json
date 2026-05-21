@@ -1,6 +1,6 @@
 {
   "name": "@coreui/coreui-pro",
-  "description": "The most popular front-end framework for developing responsive, mobile-first projects on the web rewritten by the CoreUI Team",
+  "description": "The most popular front-end framework for developing responsive, mobile-first projects on the web rewritten by the UI Team",
   "version": "5.25.0",
   "config": {
     "version_short": "5.25"
@@ -15,7 +15,7 @@
     "web"
   ],
   "homepage": "",
-  "author": "The CoreUI Team (https://github.com/orgs/coreui/people)",
+  "author": "The UI Team (https://github.com/orgs/coreui/people)",
   "scripts": {
     "start": "npm-run-all --parallel watch docs-serve",
     "bundlewatch": "bundlewatch --config .bundlewatch.config.json",

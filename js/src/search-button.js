@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------
- * CoreUI search-button.js
+ * UI search-button.js
  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */

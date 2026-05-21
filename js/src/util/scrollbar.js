@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------
- * CoreUI util/scrollBar.js
+ * UI util/scrollBar.js
  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
  *
  * This is a modified version of the Bootstrap's util/scrollBar.js

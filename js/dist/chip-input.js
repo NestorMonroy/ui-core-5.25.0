@@ -1,6 +1,6 @@
 /*!
-  * CoreUI chip-input.js v5.25.0 
-  * Copyright 2026 The CoreUI Team (https://github.com/orgs/coreui/people)
+  * UI chip-input.js v5.25.0 
+  * Copyright 2026 The UI Team (https://github.com/orgs/coreui/people)
   * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
   */
 (function (global, factory) {
@@ -11,7 +11,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * CoreUI chip-input.js
+   * UI chip-input.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    *
    * This component is a highly modified version of the Bootstrap's chip-input.js

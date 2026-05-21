@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------
- * CoreUI base-component.js
+ * UI base-component.js
  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
  *
  * This component is a modified version of the Bootstrap's base-component.js

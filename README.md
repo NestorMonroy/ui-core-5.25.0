@@ -1,15 +1,15 @@
 <p align="center">
   <a href="/">
-    <img src="/images/brand/coreui-signet.svg" alt="CoreUI logo" width="200">
+    <img src="/images/brand/coreui-signet.svg" alt="UI logo" width="200">
   </a>
 </p>
 
 <h3 align="center">CoreUI</h3>
 
 <p align="center">
-  An advanced UI library based on Bootstrap 5 – CoreUI extends Bootstrap with PRO components, and ready-to-use admin templates for React, Angular, Vue, and more.
+  An advanced UI library based on Bootstrap 5 – UI extends Bootstrap with PRO components, and ready-to-use admin templates for React, Angular, Vue, and more.
   <br>
-  <a href="/bootstrap/docs/"><strong>Explore CoreUI docs »</strong></a>
+  <a href="/bootstrap/docs/"><strong>Explore UI docs »</strong></a>
   <br>
   <br>
   <a href="https://github.com/coreui/coreui/issues/new?template=bug_report.md">Report bug</a>
@@ -19,20 +19,20 @@
   <a href="/blog/">Blog</a>
 </p>
 
-## CoreUI vs Bootstrap
+## UI vs Bootstrap
 
-CoreUI is fully compatible with Bootstrap, but it’s more than just a theme or UI extension — it’s a professionally developed and maintained system that addresses many of the limitations developers face with Bootstrap alone.
+UI is fully compatible with Bootstrap, but it’s more than just a theme or UI extension — it’s a professionally developed and maintained system that addresses many of the limitations developers face with Bootstrap alone.
 
-**Key differences between CoreUI and Bootstrap:**
+**Key differences between UI and Bootstrap:**
 
-* ✅ **Framework-native versions** – CoreUI offers official libraries for [React.js](/react/), [Vue.js](/vue/), and [Angular](/angular/), while Bootstrap depends on third-party community plugins for framework integration.
-* 👨‍💻 **Full-time maintained project** – CoreUI is not a community-only initiative. It’s developed by a dedicated, full-time team focused on long-term evolution and support.
-* 📦 **More built-in components** – CoreUI includes many components not present in Bootstrap by default, such as range sliders, multi-selects, and step-based form wizards.
-* 🛠️ **Sass Modules support today** – CoreUI already supports Sass Modules out of the box, a feature that Bootstrap plans to introduce in version 6.
-* 🌍 **Modern RTL/LTR support** – CoreUI uses CSS logical properties to provide seamless RTL and LTR layout support for multilingual and internationalized apps.
-* 🔒 **Long-Term Support (LTS)** – While Bootstrap 3 & 4 LTS is now a paid service via [HeroDevs](https://www.herodevs.com/support/nes-bootstrap?utm_source=Bootstrap_site&utm_medium=Banner&utm_campaign=v3and4_eol), CoreUI continues to offer long-term support without additional cost.
+* ✅ **Framework-native versions** – UI offers official libraries for [React.js](/react/), [Vue.js](/vue/), and [Angular](/angular/), while Bootstrap depends on third-party community plugins for framework integration.
+* 👨‍💻 **Full-time maintained project** – UI is not a community-only initiative. It’s developed by a dedicated, full-time team focused on long-term evolution and support.
+* 📦 **More built-in components** – UI includes many components not present in Bootstrap by default, such as range sliders, multi-selects, and step-based form wizards.
+* 🛠️ **Sass Modules support today** – UI already supports Sass Modules out of the box, a feature that Bootstrap plans to introduce in version 6.
+* 🌍 **Modern RTL/LTR support** – UI uses CSS logical properties to provide seamless RTL and LTR layout support for multilingual and internationalized apps.
+* 🔒 **Long-Term Support (LTS)** – While Bootstrap 3 & 4 LTS is now a paid service via [HeroDevs](https://www.herodevs.com/support/nes-bootstrap?utm_source=Bootstrap_site&utm_medium=Banner&utm_campaign=v3and4_eol), UI continues to offer long-term support without additional cost.
 
-Whether you're starting a new project or migrating from Bootstrap, CoreUI gives you a powerful upgrade path with more features, framework bindings, and peace of mind for long-term maintainability.
+Whether you're starting a new project or migrating from Bootstrap, UI gives you a powerful upgrade path with more features, framework bindings, and peace of mind for long-term maintainability.
 
 ## Table of contents
 
@@ -50,7 +50,7 @@ Whether you're starting a new project or migrating from Bootstrap, CoreUI gives 
 - [Versioning](#versioning)
 - [Creators](#creators)
 - [Thanks](#thanks)
-- [Support CoreUI Development](#support-coreui-development)
+- [Support UI Development](#support-coreui-development)
 - [Copyright and license](#copyright-and-license)
 
 ## Quick start
@@ -196,7 +196,7 @@ Have a bug or a feature request? Please first read the [issue guidelines](https:
 
 ## Documentation
 
-The documentation for the CoreUI & is hosted at our website [CoreUI](/bootstrap/docs/getting-started/introduction/)
+The documentation for the UI & is hosted at our website [CoreUI](/bootstrap/docs/getting-started/introduction/)
 
 ### Running documentation locally
 
@@ -209,12 +209,12 @@ Learn more about using Hugo by reading its [documentation](https://gohugo.io/doc
 
 ## Frameworks
 
-CoreUI supports most popular frameworks.
+UI supports most popular frameworks.
 
-- [CoreUI for Angular](https://github.com/coreui/coreui-angular)
-- [CoreUI for Bootstrap (Vanilla JS)](https://github.com/coreui/coreui)
-- [CoreUI for React](https://github.com/coreui/coreui-react)
-- [CoreUI for Vue](https://github.com/coreui/coreui-vue)
+- [UI for Angular](https://github.com/coreui/coreui-angular)
+- [UI for Bootstrap (Vanilla JS)](https://github.com/coreui/coreui)
+- [UI for React](https://github.com/coreui/coreui-react)
+- [UI for Vue](https://github.com/coreui/coreui-vue)
 
 ## Templates
 
@@ -234,15 +234,15 @@ Editor preferences are available in the [editor config](https://github.com/coreu
 
 ## Community
 
-Stay up to date on the development of CoreUI and reach out to the community with these helpful resources.
+Stay up to date on the development of UI and reach out to the community with these helpful resources.
 
-- Read and subscribe to [The Official CoreUI Blog](/blog).
+- Read and subscribe to [The Official UI Blog](/blog).
 - Follow [@core_ui on Twitter](https://x.com/core_ui).
 - Discuss, ask questions, and more on [the community Discord](https://discord.gg/pQRWe5XdGm).
 
 ## Versioning
 
-For transparency into our release cycle and in striving to maintain backward compatibility, CoreUI is maintained under [the Semantic Versioning guidelines](http://semver.org/).
+For transparency into our release cycle and in striving to maintain backward compatibility, UI is maintained under [the Semantic Versioning guidelines](http://semver.org/).
 
 See [the Releases section of our project](https://github.com/coreui/coreui/releases) for changelogs for each release version.
 
@@ -258,18 +258,18 @@ See [the Releases section of our project](https://github.com/coreui/coreui/relea
 
 * <https://github.com/xidedix>
 
-**CoreUI Team**
+**UI Team**
 
 * <https://twitter.com/core_ui>
 * <https://github.com/coreui>
 * <https://github.com/orgs/coreui/people>
 
 ## Thanks
-CoreUI is designed as the extension of [Bootstrap](https://getbootstrap.com). Special thanks for [Bootstrap team](https://getbootstrap.com/docs/5.0/about/team/) and [Bootstrap's contributors](https://github.com/twbs/bootstrap/graphs/contributors).
+UI is designed as the extension of [Bootstrap](https://getbootstrap.com). Special thanks for [Bootstrap team](https://getbootstrap.com/docs/5.0/about/team/) and [Bootstrap's contributors](https://github.com/twbs/bootstrap/graphs/contributors).
 
-## Support CoreUI Development
+## Support UI Development
 
-CoreUI is an MIT-licensed open source project and is completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support development by buying the [CoreUI PRO](/pricing/?framework=bootstrap&src=github-coreui) or by becoming a sponsor via [Open Collective](https://opencollective.com/coreui/).
+UI is an MIT-licensed open source project and is completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support development by buying the [UI PRO](/pricing/?framework=bootstrap&src=github-coreui) or by becoming a sponsor via [Open Collective](https://opencollective.com/coreui/).
 
 ## Copyright and license
 

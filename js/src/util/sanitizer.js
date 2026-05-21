@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------
- * CoreUI util/sanitizer.js
+ * UI util/sanitizer.js
  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
  *
  * This is a modified version of the Bootstrap's util/sanitizer.js

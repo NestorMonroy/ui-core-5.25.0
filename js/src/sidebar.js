@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------
- * CoreUI sidebar.js
+ * UI sidebar.js
  * Licensed under MIT (https://github.com/coreui/coreui/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
